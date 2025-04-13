@@ -14,7 +14,7 @@ $routes = Services::routes();
 $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('Home');
 $routes->setDefaultMethod('index');
-$routes->setTranslateURIDashes(false);
+$routes->setTranslateURIDashes(true);
 $routes->set404Override();
 $routes->setAutoRoute(true); // Aktifkan jika ingin menggunakan auto route klasik (CI3 style)
 
@@ -22,5 +22,5 @@ $routes->setAutoRoute(true); // Aktifkan jika ingin menggunakan auto route klasi
 $routes->get('/', 'Home::index');         // Akses "/"
 $routes->get('home', 'Home::index');      // Akses "/home"
 $routes->get('admin', 'Admin::index');    // Akses "/admin"
-$routes->get('login', 'Login::index');    // ✅ Akses "/login"
-
+$routes->get('login', 'Login::index');    // Akses "/login"
+$routes->post('login/ceklogin', 'Login::ceklogin'); // Pastikan konsisten nama method
