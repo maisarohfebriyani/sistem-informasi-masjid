@@ -24,7 +24,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
     <div class="container">
       <a href="<?= base_url() ?>" class="navbar-brand">
-        <i class="fas fa-mosque fa-2x text-green"></i><b> MASJID AHMAD DAHLAN</b>
+        <i class="fas fa-mosque fa-2x text-green"></i><b> MASJID KH. AHMAD DAHLAN</b>
       </a>
       <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
