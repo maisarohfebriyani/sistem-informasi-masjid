@@ -24,3 +24,6 @@ $routes->get('home', 'Home::index');      // Akses "/home"
 $routes->get('admin', 'Admin::index');    // Akses "/admin"
 $routes->get('login', 'Login::index');    // Akses "/login"
 $routes->post('login/ceklogin', 'Login::ceklogin'); // Pastikan konsisten nama method
+$routes->get('/register', 'Register::index');
+$routes->post('/register/save', 'Register::save');
+
