@@ -8,5 +8,5 @@ class ModelLogin extends Model
 {
     protected $table = 'tbl_user';
     protected $primaryKey = 'id_user';
-    protected $allowedFields = ['email', 'password'];
+    protected $allowedFields = ['email', 'password'];  
 }

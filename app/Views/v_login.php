@@ -23,17 +23,13 @@
     </div>
     <div class="card-body">
 
-      <!-- Flashdata Message -->
+      <!-- Flashdata Pesan -->
       <?php if (session()->getFlashdata('pesan')) : ?>
         <div class="alert alert-success"><?= session()->getFlashdata('pesan') ?></div>
       <?php endif; ?>
 
       <?php if (session()->getFlashdata('gagal')) : ?>
         <div class="alert alert-danger"><?= session()->getFlashdata('gagal') ?></div>
-      <?php endif; ?>
-
-      <?php if (session()->getFlashdata('error')) : ?>
-        <div class="alert alert-danger"><?= session()->getFlashdata('error') ?></div>
       <?php endif; ?>
 
       <?= form_open('login/ceklogin') ?>
