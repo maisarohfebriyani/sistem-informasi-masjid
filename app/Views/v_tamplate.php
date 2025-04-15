@@ -10,12 +10,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AdminLTE 3 | <?= $judul ?></title>
 
-  <!-- Google Font: Source Sans Pro -->
+  <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="<?= base_url('AdminLTE3') ?>/plugins/fontawesome-free/css/all.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="<?= base_url('AdminLTE3/plugins/fontawesome-free/css/all.min.css') ?>">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="<?= base_url('AdminLTE3/plugins/icheck-bootstrap/icheck-bootstrap.min.css') ?>">
   <!-- Theme style -->
-  <link rel="stylesheet" href="<?= base_url('AdminLTE3') ?>/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="<?= base_url('AdminLTE3/dist/css/adminlte.min.css') ?>">
 </head>
 <body class="hold-transition layout-top-nav">
 <div class="wrapper">
@@ -159,10 +161,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <!-- REQUIRED SCRIPTS -->
 
 <!-- jQuery -->
-<script src="<?= base_url('AdminLTE3') ?>/plugins/jquery/jquery.min.js"></script>
+<script src="<?= base_url('AdminLTE3/plugins/jquery/jquery.min.js') ?>"></script>
 <!-- Bootstrap 4 -->
-<script src="<?= base_url('AdminLTE3') ?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="<?= base_url('AdminLTE3/plugins/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
 <!-- AdminLTE App -->
-<script src="<?= base_url('AdminLTE3') ?>/dist/js/adminlte.min.js"></script>
+<script src="<?= base_url('AdminLTE3/dist/js/adminlte.min.js') ?>"></script>
 </body>
 </html>

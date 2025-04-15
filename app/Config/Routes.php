@@ -27,6 +27,8 @@ $routes->post('login/ceklogin', 'Login::ceklogin'); // Pastikan konsisten nama m
 $routes->get('/register', 'Register::index');
 $routes->post('/register/save', 'Register::save');
 $routes->get('/login/logout', 'Login::logout');
+$routes->get('/agenda', 'Agenda::index');
+
 
 
 
