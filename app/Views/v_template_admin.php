@@ -12,6 +12,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="<?= base_url('AdminLTE3/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') ?>">
+  <link rel="stylesheet" href="<?= base_url('AdminLTE3/plugins/datatables-responsive/css/responsive.bootstrap4.min.css') ?>">
+  <link rel="stylesheet" href="<?= base_url('AdminLTE3/plugins/datatables-buttons/css/buttons.bootstrap4.min.css') ?>">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="<?= base_url('AdminLTE3/plugins/fontawesome-free/css/all.min.css') ?>">
   <!-- icheck bootstrap -->
@@ -250,7 +254,28 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="<?= base_url('AdminLTE3/plugins/jquery/jquery.min.js') ?>"></script>
 <!-- Bootstrap 4 -->
 <script src="<?= base_url('AdminLTE3/plugins/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
+<!-- DataTables  & Plugins -->
+<script src="<?= base_url('AdminLTE3/plugins/datatables/jquery.dataTables.min.js') ?>"></script>
+<script src="<?= base_url('AdminLTE3/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') ?>"></script>
+<script src="<?= base_url('AdminLTE3/plugins/datatables-responsive/js/dataTables.responsive.min.js') ?>"></script>
+<script src="<?= base_url('AdminLTE3/plugins/datatables-responsive/js/responsive.bootstrap4.min.js') ?>"></script>
+<script src="<?= base_url('AdminLTE3/plugins/datatables-buttons/js/dataTables.buttons.min.js') ?>"></script>
+<script src="<?= base_url('AdminLTE3/plugins/datatables-buttons/js/buttons.bootstrap4.min.js') ?>"></script>
+
 <!-- AdminLTE App -->
 <script src="<?= base_url('AdminLTE3/dist/js/adminlte.min.js') ?>"></script>
+
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true, 
+      "paging": true,
+      "lengthChange": true, 
+      "autoWidth": false,
+      
+    })
+    
+  });
+</script>
 </body>
 </html>
