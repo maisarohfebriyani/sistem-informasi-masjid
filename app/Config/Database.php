@@ -26,136 +26,30 @@ class Database extends Config
      */
     public array $default = [
         'DSN'          => '',
-        'hostname'     => 'localhost',
-        'username'     => '',
-        'password'     => '',
-        'database'     => '',
-        'DBDriver'     => 'MySQLi',
-        'DBPrefix'     => '',
-        'pConnect'     => false,
-        'DBDebug'      => true,
-        'charset'      => 'utf8mb4',
-        'DBCollat'     => 'utf8mb4_general_ci',
+        'hostname'     => 'localhost', // Ganti dengan alamat host database jika berbeda
+        'username'     => 'root',      // Ganti dengan username yang sesuai
+        'password'     => '',          // Ganti dengan password yang sesuai
+        'database'     => 'db-simasjid-ci4', // Nama database yang digunakan
+        'DBDriver'     => 'MySQLi',    // Driver yang digunakan, dalam hal ini MySQLi
+        'DBPrefix'     => '',          // Jika ada prefix pada tabel, bisa diatur di sini
+        'pConnect'     => false,       // Menggunakan persistent connection atau tidak
+        'DBDebug'      => true,        // Debugging database
+        'charset'      => 'utf8mb4',   // Charset yang digunakan
+        'DBCollat'     => 'utf8mb4_general_ci', // Collation yang digunakan
         'swapPre'      => '',
-        'encrypt'      => false,
-        'compress'     => false,
-        'strictOn'     => false,
-        'failover'     => [],
-        'port'         => 3306,
-        'numberNative' => false,
-        'foundRows'    => false,
+        'encrypt'      => false,       // Enkripsi koneksi database
+        'compress'     => false,       // Kompresi query yang dikirim
+        'strictOn'     => false,       // Mengaktifkan mode strict atau tidak
+        'failover'     => [],          // Koneksi failover jika koneksi utama gagal
+        'port'         => 3306,        // Port default untuk MySQL
+        'numberNative' => false,       // Menampilkan angka dalam format native
+        'foundRows'    => false,       // Mengambil jumlah total baris (untuk query yang tidak menggunakan LIMIT)
         'dateFormat'   => [
-            'date'     => 'Y-m-d',
-            'datetime' => 'Y-m-d H:i:s',
-            'time'     => 'H:i:s',
+            'date'     => 'Y-m-d',         // Format tanggal
+            'datetime' => 'Y-m-d H:i:s',   // Format datetime
+            'time'     => 'H:i:s',         // Format waktu
         ],
     ];
-
-    //    /**
-    //     * Sample database connection for SQLite3.
-    //     *
-    //     * @var array<string, mixed>
-    //     */
-    //    public array $default = [
-    //        'database'    => 'database.db',
-    //        'DBDriver'    => 'SQLite3',
-    //        'DBPrefix'    => '',
-    //        'DBDebug'     => true,
-    //        'swapPre'     => '',
-    //        'failover'    => [],
-    //        'foreignKeys' => true,
-    //        'busyTimeout' => 1000,
-    //        'synchronous' => null,
-    //        'dateFormat'  => [
-    //            'date'     => 'Y-m-d',
-    //            'datetime' => 'Y-m-d H:i:s',
-    //            'time'     => 'H:i:s',
-    //        ],
-    //    ];
-
-    //    /**
-    //     * Sample database connection for Postgre.
-    //     *
-    //     * @var array<string, mixed>
-    //     */
-    //    public array $default = [
-    //        'DSN'        => '',
-    //        'hostname'   => 'localhost',
-    //        'username'   => 'root',
-    //        'password'   => 'root',
-    //        'database'   => 'ci4',
-    //        'schema'     => 'public',
-    //        'DBDriver'   => 'Postgre',
-    //        'DBPrefix'   => '',
-    //        'pConnect'   => false,
-    //        'DBDebug'    => true,
-    //        'charset'    => 'utf8',
-    //        'swapPre'    => '',
-    //        'failover'   => [],
-    //        'port'       => 5432,
-    //        'dateFormat' => [
-    //            'date'     => 'Y-m-d',
-    //            'datetime' => 'Y-m-d H:i:s',
-    //            'time'     => 'H:i:s',
-    //        ],
-    //    ];
-
-    //    /**
-    //     * Sample database connection for SQLSRV.
-    //     *
-    //     * @var array<string, mixed>
-    //     */
-    //    public array $default = [
-    //        'DSN'        => '',
-    //        'hostname'   => 'localhost',
-    //        'username'   => 'root',
-    //        'password'   => 'root',
-    //        'database'   => 'ci4',
-    //        'schema'     => 'dbo',
-    //        'DBDriver'   => 'SQLSRV',
-    //        'DBPrefix'   => '',
-    //        'pConnect'   => false,
-    //        'DBDebug'    => true,
-    //        'charset'    => 'utf8',
-    //        'swapPre'    => '',
-    //        'encrypt'    => false,
-    //        'failover'   => [],
-    //        'port'       => 1433,
-    //        'dateFormat' => [
-    //            'date'     => 'Y-m-d',
-    //            'datetime' => 'Y-m-d H:i:s',
-    //            'time'     => 'H:i:s',
-    //        ],
-    //    ];
-
-    //    /**
-    //     * Sample database connection for OCI8.
-    //     *
-    //     * You may need the following environment variables:
-    //     *   NLS_LANG                = 'AMERICAN_AMERICA.UTF8'
-    //     *   NLS_DATE_FORMAT         = 'YYYY-MM-DD HH24:MI:SS'
-    //     *   NLS_TIMESTAMP_FORMAT    = 'YYYY-MM-DD HH24:MI:SS'
-    //     *   NLS_TIMESTAMP_TZ_FORMAT = 'YYYY-MM-DD HH24:MI:SS'
-    //     *
-    //     * @var array<string, mixed>
-    //     */
-    //    public array $default = [
-    //        'DSN'        => 'localhost:1521/XEPDB1',
-    //        'username'   => 'root',
-    //        'password'   => 'root',
-    //        'DBDriver'   => 'OCI8',
-    //        'DBPrefix'   => '',
-    //        'pConnect'   => false,
-    //        'DBDebug'    => true,
-    //        'charset'    => 'AL32UTF8',
-    //        'swapPre'    => '',
-    //        'failover'   => [],
-    //        'dateFormat' => [
-    //            'date'     => 'Y-m-d',
-    //            'datetime' => 'Y-m-d H:i:s',
-    //            'time'     => 'H:i:s',
-    //        ],
-    //    ];
 
     /**
      * This database connection is used when running PHPUnit database tests.
@@ -164,12 +58,12 @@ class Database extends Config
      */
     public array $tests = [
         'DSN'         => '',
-        'hostname'    => '127.0.0.1',
-        'username'    => '',
-        'password'    => '',
-        'database'    => ':memory:',
-        'DBDriver'    => 'SQLite3',
-        'DBPrefix'    => 'db_',  // Needed to ensure we're working correctly with prefixes live. DO NOT REMOVE FOR CI DEVS
+        'hostname'    => '127.0.0.1', // Localhost untuk testing
+        'username'    => '',          // Kosongkan atau ganti sesuai database testing
+        'password'    => '',          // Kosongkan atau ganti sesuai database testing
+        'database'    => ':memory:',  // Menggunakan database in-memory untuk testing
+        'DBDriver'    => 'SQLite3',   // Menggunakan SQLite3 untuk testing
+        'DBPrefix'    => 'db_',       // Prefix tabel untuk database testing
         'pConnect'    => false,
         'DBDebug'     => true,
         'charset'     => 'utf8',
@@ -179,13 +73,13 @@ class Database extends Config
         'compress'    => false,
         'strictOn'    => false,
         'failover'    => [],
-        'port'        => 3306,
-        'foreignKeys' => true,
-        'busyTimeout' => 1000,
+        'port'        => 3306,        // Port default untuk SQLite
+        'foreignKeys' => true,        // Mengaktifkan foreign key untuk SQLite
+        'busyTimeout' => 1000,        // Waktu tunggu jika database SQLite sedang sibuk
         'dateFormat'  => [
-            'date'     => 'Y-m-d',
-            'datetime' => 'Y-m-d H:i:s',
-            'time'     => 'H:i:s',
+            'date'     => 'Y-m-d',      // Format tanggal
+            'datetime' => 'Y-m-d H:i:s',// Format datetime
+            'time'     => 'H:i:s',      // Format waktu
         ],
     ];
 
@@ -193,9 +87,7 @@ class Database extends Config
     {
         parent::__construct();
 
-        // Ensure that we always set the database group to 'tests' if
-        // we are currently running an automated test suite, so that
-        // we don't overwrite live data on accident.
+        // Pastikan kita menggunakan grup database 'tests' saat menjalankan PHPUnit untuk menghindari menimpa data live.
         if (ENVIRONMENT === 'testing') {
             $this->defaultGroup = 'tests';
         }

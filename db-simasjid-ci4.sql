@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Apr 12, 2025 at 01:57 PM
+-- Generation Time: Apr 15, 2025 at 02:28 PM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -20,6 +20,27 @@ SET time_zone = "+00:00";
 --
 -- Database: `db-simasjid-ci4`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_agenda`
+--
+
+CREATE TABLE `tbl_agenda` (
+  `id_agenda` int NOT NULL,
+  `nama_kegiatan` varchar(255) NOT NULL,
+  `tanggal` date DEFAULT NULL,
+  `jam` time DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `tbl_agenda`
+--
+
+INSERT INTO `tbl_agenda` (`id_agenda`, `nama_kegiatan`, `tanggal`, `jam`) VALUES
+(1, 'Kajian Bersama', '2025-04-15', '09:30:26'),
+(2, 'Kajian Rutin (Seninan)', '2025-04-21', '19:30:41');
 
 -- --------------------------------------------------------
 
@@ -76,15 +97,38 @@ CREATE TABLE `tbl_kas_sosial` (
 
 CREATE TABLE `tbl_user` (
   `id_user` int NOT NULL,
-  `nama_user` varchar(100) NOT NULL,
   `email` varchar(50) DEFAULT NULL,
-  `password` varchar(100) DEFAULT NULL,
-  `level` int DEFAULT NULL
+  `password` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `tbl_user`
+--
+
+INSERT INTO `tbl_user` (`id_user`, `email`, `password`) VALUES
+(4, 'admin@gmail.com', '$2y$10$deSNcyaNLNNBikh5Pk5Xxu9oXweTLNlY0d8rJy5hb7i8Fcoo/5k9S');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_waktu`
+--
+
+CREATE TABLE `tbl_waktu` (
+  `id_waktu` int NOT NULL,
+  `nama_waktu` varchar(100) NOT NULL,
+  `jam` time NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `tbl_agenda`
+--
+ALTER TABLE `tbl_agenda`
+  ADD PRIMARY KEY (`id_agenda`);
 
 --
 -- Indexes for table `tbl_donasi`
@@ -111,8 +155,20 @@ ALTER TABLE `tbl_user`
   ADD PRIMARY KEY (`id_user`);
 
 --
+-- Indexes for table `tbl_waktu`
+--
+ALTER TABLE `tbl_waktu`
+  ADD PRIMARY KEY (`id_waktu`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `tbl_agenda`
+--
+ALTER TABLE `tbl_agenda`
+  MODIFY `id_agenda` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `tbl_donasi`
@@ -136,7 +192,13 @@ ALTER TABLE `tbl_kas_sosial`
 -- AUTO_INCREMENT for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
-  MODIFY `id_user` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id_user` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `tbl_waktu`
+--
+ALTER TABLE `tbl_waktu`
+  MODIFY `id_waktu` int NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
