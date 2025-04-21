@@ -39,10 +39,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <!-- Left navbar links -->
                         <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="<?= base_url() ?>" class="nav-link">Home</a>
+            <a href="<?= base_url('Home/Agenda') ?>" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="index3.html" class="nav-link">Agenda</a>
+            <a href="<?= ?> base_url" class="nav-link">Agenda</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">Kas</a>
@@ -109,7 +109,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0"> Top Navigation <small>Example 3.0</small></h1>
+            <h1 class="m-0"> $judul <small></small></h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
