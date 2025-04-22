@@ -10,4 +10,8 @@ class ModelAgenda extends Model
     {
         return $this->db->table('tbl_agenda')->get()->getResultArray();
     }
+    public function InsertData($data)
+    {
+        $this->db->table('tbl_agenda')->insert($data);
+    }
 }

@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Controllers\BaseController;
+
 class Admin extends BaseController
 {
     public function index()
@@ -23,4 +25,6 @@ class Admin extends BaseController
 
         return view('v_template_admin', $data);
     }
+}
+
 }

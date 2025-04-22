@@ -1,5 +1,5 @@
 <div class="col-md-12">
-  <div class="card card-success">
+  <div class="card card-success ">
     <div class="card-header">
       <h3 class="card-title">Data <?= $judul ?>Bulan <?=date('M')?></h3>
         </a>
@@ -8,25 +8,35 @@
     <!-- /.card-header -->
 
     <div class="card-body">
-      <table class="table table-bordeless">
-        <thead class="thead-dark text-center">
-        <tbody>
+          <div class="row">
           <?php foreach ($agenda as $value) : ?>
             <tr class="text-center">
-              <td>width="50px"
-              <td class="text-left">
-                <i class="fas fa-bullhorn text-success"></i> <strong><?= $value['nama_kegiatan'] ?></strong><br>
-                <small>
-                  <i class="far fa-calendar-alt"></i> Tanggal: <?= date('d-m-Y', strtotime($value['tanggal'])) ?><br>
-                  <i class="far fa-clock"></i> Jam: <?= $value['jam'] ?> - Selesai
-                </small>
+            </div>
+          <!-- /.col -->
+          <div class="col-md-6 col-sm-6 col-12">
+            <div class="info-box">
+              <span class="info-box-icon"><i class="fas fa-buiihorn text-succes fa-2"></i>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Kegiatan</span>
+                <span class="info-box-number"><?=$Value['nama_kegiatan']?></span>
+
+                <div class="progress">
+                  <div class="progress-bar" style="width: 0%"></div>
+                </div>
+                <span class="progress-description">
+                  <i> class="fas fa-calender alt text-succes"></i><?=" $value?['tanggal']?>
+                  <i> class=" fas fa-clock text-succes"></i>=" $value?['jam']?>
+               </span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
               </td>
                 </a>
               </td>
             </tr>
           <?php endforeach; ?>
-        </tbody>
-      </table>
     </div>
     <!-- /.card-body -->
   </div>

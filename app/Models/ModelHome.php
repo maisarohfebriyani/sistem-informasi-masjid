@@ -10,7 +10,8 @@ class ModelHome extends Model
     {
         return $this->db->table('tbl_agenda')
         ->where('month(tanggal)', date('m'))
-        ->where('year(tanggal)'), date('Y'))
+        ->where('year(tanggal)', date('Y'))
+        ->orderBy('tanggal','ASC')
         ->get()->getResultArray();
     }
 }
