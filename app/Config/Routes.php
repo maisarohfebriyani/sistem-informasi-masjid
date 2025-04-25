@@ -14,9 +14,12 @@ $routes = Services::routes();
 $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('Home');
 $routes->setDefaultMethod('index');
-$routes->setTranslateURIDashes(true);
+$routes->setTranslateURIDashes(false);
+
 $routes->set404Override();
-$routes->setAutoRoute(true); // Aktifkan jika ingin menggunakan auto route klasik (CI3 style)
+// AUTO ROUTER SETTINGS
+$routes->setAutoRoute(false); // matikan improved
+// Aktifkan jika ingin menggunakan auto route klasik (CI3 style)
 
 // Daftar route manual
 $routes->get('/', 'Home::index');         // Akses "/"
@@ -28,6 +31,16 @@ $routes->get('/register', 'Register::index');
 $routes->post('/register/save', 'Register::save');
 $routes->get('/login/logout', 'Login::logout');
 $routes->get('/agenda', 'Agenda::index');
+$routes->post('agenda/insert-data', 'Agenda::insertData');
+$routes->get('agenda/hapus/(:num)', 'Agenda::hapus/$1');
+$routes->get('agenda/edit/(:num)', 'Agenda::edit/$1');
+$routes->post('agenda/update/(:num)', 'Agenda::updateData/$1');
+
+
+
+
+
+
 
 
 

@@ -14,8 +14,6 @@
       <?php if (session()->getFlashdata('pesan')) : ?>
         <div class="alert alert-success"><?= session()->getFlashdata('pesan') ?></div>
       <?php endif; ?>
-      }
-        ?>
       <table id="example1" class="table table-bordered table-striped">
         <thead class="thead-dark text-center">
           <tr>
@@ -40,8 +38,8 @@
                   <i class="fas fa-pencil-alt"></i>
                 </a>
                 <a href="<?= base_url('agenda/hapus/' . $value['id_agenda']) ?>" class="btn btn-danger btn-sm" title="Hapus" onclick="return confirm('Yakin ingin menghapus agenda ini?');">
-                  <i class="fas fa-trash"></i>
-                </a>
+    <i class="fas fa-trash"></i>
+</a>
               </td>
             </tr>
           <?php endforeach; ?>
@@ -61,7 +59,10 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <?php echo form_open('Agenda/InsertData') ?>
+      
+      <!-- ✅ INI SUDAH DIPERBAIKI -->
+      <?php echo form_open('agenda/insert-data') ?>
+
       <div class="modal-body">
         <div class="form-group">
           <label>Nama Kegiatan</label>
@@ -80,6 +81,7 @@
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         <button type="submit" class="btn btn-success">Simpan</button>
       </div>
+
       <?php echo form_close() ?>
     </div>
   </div>

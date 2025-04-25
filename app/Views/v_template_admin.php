@@ -94,11 +94,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </li>
 
         <li class="nav-item">
-  <a href="<?= base_url('agenda'); ?>" class="nav-link <?= (isset($menu) && $menu == 'agenda') ? 'active' : ''; ?>">
-    <i class="nav-icon fas fa-calendar-alt"></i>
-    <p>Agenda</p>
-  </a>
+    <a href="<?= base_url('agenda'); ?>" class="nav-link <?= (isset($menu) && $menu == 'agenda') ? 'active' : ''; ?>">
+        <i class="nav-icon fas fa-calendar-alt"></i>
+        <p>Agenda</p>
+    </a>
 </li>
+
 
 
         <li class="nav-item">
