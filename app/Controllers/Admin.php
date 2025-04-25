@@ -2,29 +2,49 @@
 
 namespace App\Controllers;
 
-use App\Controllers\BaseController;
+use CodeIgniter\Controller;
+use App\Models\ModelAdmin;
 
-class Admin extends BaseController
+class Admin extends Controller
 {
+    protected $ModelAdmin;
+
+    public function __construct() 
+    {
+        $this->ModelAdmin = new ModelAdmin();
+    }
+
     public function index()
     {
-        // Cek jika pengguna sudah login
-        if (!session()->get('logged_in')) {
-            // Jika belum login, arahkan ke halaman login
-            return redirect()->to('/login')->with('gagal', 'Anda harus login terlebih dahulu.');
-        }
-
-        // Data untuk tampilan dashboard
         $data = [
             'judul'     => 'Dashboard',
             'subjudul'  => '',
             'menu'      => 'dashboard',
             'sub-menu'  => '',
-            'page'      => 'v_Dashboard',
+            'page'      => 'v_dashboard',
         ];
 
         return view('v_template_admin', $data);
     }
-}
 
+    public function setting()
+    {
+        // Ambil data kota dari API MyQuran
+        $url  = 'https://api.myquran.com/v2/sholat/kota/semua';
+        $kota = json_decode(file_get_contents($url),true); // decode agar bisa diakses sebagai array
+
+        // Data yang dikirim ke view
+       $data = [
+            'judul'     => 'Setting',
+            'subjudul'  => '',
+            'menu'      => 'setting',
+            'sub-menu'  => '',
+            'page'      => 'v_setting',
+            'setting'   => $this->ModelAdmin->ViewSetting(),
+            'kota'      => $kota,
+        ];
+
+        return view('v_template_admin', $data);
+
+    }
 }

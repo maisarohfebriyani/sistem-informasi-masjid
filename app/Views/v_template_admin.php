@@ -188,6 +188,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </p>
             </a>
           </li>
+          <li class="nav-item<?<?= $menu == 'Setting' ? 'active' : '' ?>">
+            <a href="<?= base_url('admin/setting')?> " class="nav-link">
+              <i class=" nav-icon fas fa-cog"></i>
+              <p>
+              Setting
+</p>
+</a>
+</li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -262,7 +270,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="<?= base_url('AdminLTE3/plugins/datatables-responsive/js/responsive.bootstrap4.min.js') ?>"></script>
 <script src="<?= base_url('AdminLTE3/plugins/datatables-buttons/js/dataTables.buttons.min.js') ?>"></script>
 <script src="<?= base_url('AdminLTE3/plugins/datatables-buttons/js/buttons.bootstrap4.min.js') ?>"></script>
-
+<!-- Select2 -->
+<link rel="stylesheet" href="../../plugins/select2/css/select2.min.css">
+<script src="../../plugins/select2/js/select2.full.min.js"></script>
+<link rel="stylesheet" href="../../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
 <!-- AdminLTE App -->
 <script src="<?= base_url('AdminLTE3/dist/js/adminlte.min.js') ?>"></script>
 
