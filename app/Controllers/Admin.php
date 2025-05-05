@@ -47,4 +47,17 @@ class Admin extends Controller
         return view('v_template_admin', $data);
 
     }
+
+    public function UpdateSetting()
+    {
+        $data = [
+            'id' => 1,
+            'nama_masjid' => $this->request->getPost('nama_masjid'),
+            'id_kota' => $this->request->getPost('id_kota'),
+            'alamat' => $this->request->getPost('alamat'),
+        ];
+        $this->ModelAdmin->UpdateSetting($data);
+        session()->setFlashdata('pesan', 'Setting Berhasil Diupdate !!');
+        return redirect()->to(base_url('Admin/Setting'));
+    }
 }

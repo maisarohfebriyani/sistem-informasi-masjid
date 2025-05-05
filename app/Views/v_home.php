@@ -1,4 +1,4 @@
-<div class="col-lg-12">
+<div class="col-lg-9">
 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -39,16 +39,91 @@
 </div>
 <br>
 </div>
-<div class="col-lg-4">
-   <div class="card card-outline-success">
+<div class="col-lg-3">
+   <div class="card card-outline card-success">
      <div class="card-header">
-       <h3 class="card-title">Waktu Sholat</h3>
+       <h3 class="card-title text-success"> <b><?= $waktu['data']['lokasi'] ?></b></h3>
      </div>
-     <div class="card-body">
-       The body of the card
+     <div class="card-body p-3">
+     <ul class="products-list product-list-in-card pl-2 pr-2">
+                  <li class="item">
+                    <div class="product-img">
+                      <i class="far fa-clock fa-3x text-success"></i>
+                    </div>
+                    <div class="product-info">
+                      <a class="product-title">Subuh</a>
+                      <span class="product-description">
+                        <?= $waktu['data']['jadwal']['subuh']?>
+                      </span>
+                    </div>
+                  </li>
+
+                  <li class="item">
+                    <div class="product-img">
+                      <i class="far fa-clock fa-3x text-success"></i>
+                    </div>
+                    <div class="product-info">
+                      <a class="product-title">Dhuha</a>
+                      <span class="product-description">
+                        <?= $waktu['data']['jadwal']['dhuha']?>
+                      </span>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="product-img">
+                      <i class="far fa-clock fa-3x text-success"></i>
+                    </div>
+                    <div class="product-info">
+                      <a class="product-title">Dzuhur</a>
+                      <span class="product-description">
+                        <?= $waktu['data']['jadwal']['dzuhur']?>
+                      </span>
+                    </div>
+                  </li>
+
+                  <li class="item">
+                    <div class="product-img">
+                      <i class="far fa-clock fa-3x text-success"></i>
+                    </div>
+                    <div class="product-info">
+                      <a class="product-title">Ashar</a>
+                      <span class="product-description">
+                        <?= $waktu['data']['jadwal']['ashar']?>
+                      </span>
+                    </div>
+                  </li>
+
+                  <li class="item">
+                    <div class="product-img">
+                      <i class="far fa-clock fa-3x text-success"></i>
+                    </div>
+                    <div class="product-info">
+                      <a class="product-title">Maghrib</a>
+                      <span class="product-description">
+                        <?= $waktu['data']['jadwal']['maghrib']?>
+                      </span>
+                    </div>
+                  </li>
+
+                  <li class="item">
+                    <div class="product-img">
+                      <i class="far fa-clock fa-3x text-success"></i>
+                    </div>
+                    <div class="product-info">
+                      <a class="product-title">Isya</a>
+                      <span class="product-description">
+                        <?= $waktu['data']['jadwal']['isya']?>
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+                <div class="text-center">
+                <b class="text-success"><?= $waktu['data']['jadwal']['tanggal']?></b>
+                </div>
      </div>
    </div>
 </div>
+
 
 
 <div class="col-lg-12">
