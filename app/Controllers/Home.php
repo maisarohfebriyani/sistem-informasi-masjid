@@ -12,16 +12,26 @@ class Home extends BaseController
         $this->ModelHome = new ModelHome(); // inisialisasi ModelHome
     }
 
-    // Method ini akan dipanggil ketika mengakses /Home atau /Home/index
     public function index()
     {
+       
         $data = [
-            'judul' => 'Agenda',
-            'page'  => 'front-end/v_Agenda',  // Pastikan file view sesuai
-            'agenda' => $this->ModelHome->Agenda(), // Ambil data agenda dari model
+            'judul' => 'Home',
+            'page'  => 'v_home', 
         ];
 
-        // Menampilkan halaman dengan data yang sudah dipersiapkan
-        return view('v_tamplate', $data);
+        return view('v_tamplate', $data); // Memanggil view template dengan data
+    }
+
+    public function Agenda()
+    {
+        // Ambil data agenda dari model
+        $data = [
+            'judul' => 'Agenda',
+            'page'  => 'front-end/v_agenda', // Pastikan file view sesuai
+            'agenda' => $this->ModelHome->Agenda(),
+        ];
+
+        return view('v_tamplate', $data); // Memanggil view template dengan data
     }
 }

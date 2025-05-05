@@ -40,16 +40,15 @@
 <br>
 </div>
 <div class="col-lg-4">
-            <div class="card card outline-success">
-              <div class="card-header">
-                <h3 class="card-title">Waktu Sholat</h3>>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body">
-                The body of the card
-              </div>
-              <!-- /.card-body -->
-            </div>
+   <div class="card card-outline-success">
+     <div class="card-header">
+       <h3 class="card-title">Waktu Sholat</h3>
+     </div>
+     <div class="card-body">
+       The body of the card
+     </div>
+   </div>
+</div>
 
 
 <div class="col-lg-12">

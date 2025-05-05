@@ -24,10 +24,12 @@
                 <div class="progress">
                   <div class="progress-bar" style="width: 0%"></div>
                 </div>
-                <span class="progress-description">
-                  <i> class="fas fa-calender alt text-succes"></i><?=" $value?['tanggal']?>
-                  <i> class=" fas fa-clock text-succes"></i>=" $value?['jam']?>
-               </span>
+                </div>
+<span class="progress-description">
+  <i class="fas fa-calendar-alt text-success"></i> <?= $value['tanggal'] ?>
+  <i class="fas fa-clock text-success"></i> <?= $value['jam'] ?>
+</span>
+
               </div>
               <!-- /.info-box-content -->
             </div>

@@ -1,0 +1,54 @@
+CRITICAL - 2025-05-05 05:33:12 --> CodeIgniter\View\Exceptions\ViewException: File tidak valid: front-end/v_Agenda.php
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('front-end/v_Agenda.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('front-end/v_Agenda', [], true)
+ 3 APPPATH\Views\v_tamplate.php(133): view('front-end/v_Agenda')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\bisa\\sistem-informasi-masjid\\app\\Views\\v_tamplate.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('v_tamplate', [], true)
+ 7 APPPATH\Controllers\Home.php(25): view('v_tamplate', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-05 05:36:24 --> CodeIgniter\View\Exceptions\ViewException: File tidak valid: front-end/v_Agenda.php
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('front-end/v_Agenda.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('front-end/v_Agenda', [], true)
+ 3 APPPATH\Views\v_tamplate.php(133): view('front-end/v_Agenda')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\bisa\\sistem-informasi-masjid\\app\\Views\\v_tamplate.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('v_tamplate', [], true)
+ 7 APPPATH\Controllers\Home.php(25): view('v_tamplate', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-05 05:36:28 --> CodeIgniter\View\Exceptions\ViewException: File tidak valid: front-end/v_Agenda.php
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('front-end/v_Agenda.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('front-end/v_Agenda', [], true)
+ 3 APPPATH\Views\v_tamplate.php(133): view('front-end/v_Agenda')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\bisa\\sistem-informasi-masjid\\app\\Views\\v_tamplate.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('v_tamplate', [], true)
+ 7 APPPATH\Controllers\Home.php(25): view('v_tamplate', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-05 05:39:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-05 05:57:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-05 06:12:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-05 06:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-05 06:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-05 07:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

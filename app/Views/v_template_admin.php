@@ -188,14 +188,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </p>
             </a>
           </li>
-          <li class="nav-item<?<?= $menu == 'Setting' ? 'active' : '' ?>">
-            <a href="<?= base_url('admin/setting')?> " class="nav-link">
-              <i class=" nav-icon fas fa-cog"></i>
-              <p>
-              Setting
-</p>
-</a>
+          <li class="nav-item<?= $menu == 'Setting' ? ' active' : '' ?>">
+    <a href="<?= base_url('admin/setting') ?>" class="nav-link">
+        <i class="nav-icon fas fa-cog"></i>
+        <p>Setting</p>
+    </a>
 </li>
+
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
