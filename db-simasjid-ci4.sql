@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Apr 15, 2025 at 02:28 PM
+-- Generation Time: May 06, 2025 at 06:16 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -31,7 +31,7 @@ CREATE TABLE `tbl_agenda` (
   `id_agenda` int NOT NULL,
   `nama_kegiatan` varchar(255) NOT NULL,
   `tanggal` date DEFAULT NULL,
-  `jam` time DEFAULT NULL
+  `jam` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
@@ -40,7 +40,9 @@ CREATE TABLE `tbl_agenda` (
 
 INSERT INTO `tbl_agenda` (`id_agenda`, `nama_kegiatan`, `tanggal`, `jam`) VALUES
 (1, 'Kajian Bersama', '2025-04-15', '09:30:26'),
-(2, 'Kajian Rutin (Seninan)', '2025-04-21', '19:30:41');
+(2, 'Kajian Rutin (Seninan)', '2025-04-21', '19:30:41'),
+(8, 'khataman tuti ', '2025-04-24', '00:00'),
+(10, 'kajian ustazah lia', '2025-04-28', '12:00');
 
 -- --------------------------------------------------------
 
@@ -74,6 +76,15 @@ CREATE TABLE `tbl_kas_masjid` (
   `status` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+--
+-- Dumping data for table `tbl_kas_masjid`
+--
+
+INSERT INTO `tbl_kas_masjid` (`id_kas`, `tanggal`, `ket`, `kas_masuk`, `kas_keluar`, `status`) VALUES
+(1, '2025-05-06', 'Saldo Awal', 10000000, 0, 'Masuk'),
+(2, '2025-05-06', 'Pembayaran PDAM', 0, 150000, 'Keluar'),
+(3, '2025-05-06', 'Pembayaran Tagihan Listrik Bulan Agustus 2025', 0, 250000, 'Keluar');
+
 -- --------------------------------------------------------
 
 --
@@ -88,6 +99,27 @@ CREATE TABLE `tbl_kas_sosial` (
   `kas_keluar` int DEFAULT NULL,
   `status` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_setting`
+--
+
+CREATE TABLE `tbl_setting` (
+  `id` int NOT NULL,
+  `nama_masjid` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `id_kota` varchar(5) NOT NULL,
+  `nama_kota` varchar(50) NOT NULL,
+  `alamat` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `tbl_setting`
+--
+
+INSERT INTO `tbl_setting` (`id`, `nama_masjid`, `id_kota`, `nama_kota`, `alamat`) VALUES
+(1, 'Masjid KH.Ahmad Dahlan', '1406', ' KAB. BREBES', 'JL. PAGOJENGAN');
 
 -- --------------------------------------------------------
 
@@ -149,6 +181,12 @@ ALTER TABLE `tbl_kas_sosial`
   ADD PRIMARY KEY (`id_kas_sosial`);
 
 --
+-- Indexes for table `tbl_setting`
+--
+ALTER TABLE `tbl_setting`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
@@ -168,7 +206,7 @@ ALTER TABLE `tbl_waktu`
 -- AUTO_INCREMENT for table `tbl_agenda`
 --
 ALTER TABLE `tbl_agenda`
-  MODIFY `id_agenda` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_agenda` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `tbl_donasi`
@@ -180,13 +218,19 @@ ALTER TABLE `tbl_donasi`
 -- AUTO_INCREMENT for table `tbl_kas_masjid`
 --
 ALTER TABLE `tbl_kas_masjid`
-  MODIFY `id_kas` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id_kas` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `tbl_kas_sosial`
 --
 ALTER TABLE `tbl_kas_sosial`
   MODIFY `id_kas_sosial` int NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `tbl_setting`
+--
+ALTER TABLE `tbl_setting`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `tbl_user`
