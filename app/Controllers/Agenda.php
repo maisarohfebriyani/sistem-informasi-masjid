@@ -18,7 +18,7 @@ class Agenda extends BaseController
             'judul'     => 'Agenda',
             'subjudul'  => '',
             'menu'      => 'agenda',  // Set menu untuk agenda
-            'sub_menu'  => '',
+            'submenu'  => '',
             'agenda'    => $this->ModelAgenda->AllData(),
             'page'      => 'v_agenda'
         ];

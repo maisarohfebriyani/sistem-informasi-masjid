@@ -18,7 +18,7 @@ class Home extends BaseController
     {
         $setting = $this->ModelAdmin->ViewSetting();
 
-        $url = 'https://api.myquran.com/v2/sholat/jadwal/'.$setting[id_kota].'/'.date('Y').'/'.date('m').'/'.date('d');
+        $url = 'https://api.myquran.com/v2/sholat/jadwal/'.$setting['id_kota'].'/'.date('Y').'/'.date('m').'/'.date('d');
 
         $waktu = json_decode(file_get_contents($url), true);
 

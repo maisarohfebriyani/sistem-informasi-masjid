@@ -20,7 +20,7 @@ class Admin extends Controller
             'judul'     => 'Dashboard',
             'subjudul'  => '',
             'menu'      => 'dashboard',
-            'sub-menu'  => '',
+            'submenu'  => '',
             'page'      => 'v_dashboard',
         ];
 
@@ -29,7 +29,6 @@ class Admin extends Controller
 
     public function setting()
     {
-        // Ambil data kota dari API MyQuran
         $url  = 'https://api.myquran.com/v2/sholat/kota/semua';
         $kota = json_decode(file_get_contents($url),true); // decode agar bisa diakses sebagai array
 
@@ -38,7 +37,7 @@ class Admin extends Controller
             'judul'     => 'Setting',
             'subjudul'  => '',
             'menu'      => 'setting',
-            'sub-menu'  => '',
+            'submenu'  => '',
             'page'      => 'v_setting',
             'setting'   => $this->ModelAdmin->ViewSetting(),
             'kota'      => $kota,
@@ -61,3 +60,4 @@ class Admin extends Controller
         return redirect()->to(base_url('Admin/Setting'));
     }
 }
+

@@ -109,8 +109,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </a>
         </li>
 
-          <li class="nav-item <?= $menu == 'uang-kas' ? 'menu-open' : '' ?>">
-            <a href="#" class="nav-link <?= $menu == 'uang-kas' ? 'active' : '' ?>">
+          <li class="nav-item <?= $menu == 'kas-masjid' ? 'menu-open' : '' ?>">
+            <a href="#" class="nav-link <?= $menu == 'kas-masjid' ? 'active' : '' ?>">
               <i class="nav-icon fas fa-money-bill-wave"></i>
               <p>
                 Uang Kas Masjid
@@ -131,7 +131,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="<?= base_url('KasMasjid') ?>" class="nav-link <?= $submenu == 'rekap-kas' ? 'active' : '' ?>">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Rekap kas</p>
                 </a>
@@ -161,7 +161,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="<?= base_url('KasMasjid') ?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Rekap kas</p>
                 </a>
@@ -169,6 +169,29 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </ul>
           </li>
 
+          <li class="nav-item <?= $menu == '-' ? 'menu-open' : '' ?>">
+            <a href="#" class="nav-link <?= $menu == '-' ? 'active' : '' ?>">
+              <i class="nav-icon fas fa-file-invoice-dollar"></i>
+              <p>
+                Laporan Kas
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+            <li class="nav-item">
+                <a href="#" class="nav-link <?= $menu == '-' ? 'active' : '' ?>">
+                  <i class="far fa-circle nav-icon text-success"></i>
+                  <p>Laporan Kas Masjid</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon text-danger"></i>
+                  <p>Laporan Kas Sosial</p>
+                </a>
+              </li>
+            </ul>
+          </li>
 
           <li class="nav-item">
             <a href="#" class="nav-link">
