@@ -35,22 +35,22 @@ Website ini adalah proyek sistem informasi masjid berbasis web yang bertujuan un
 - **Database**: MySQL
 - **Tools**: GitHub, Google Docs, Canva (mockup)
 
-## Screenshot Tampilan Websi
+## Dokumen Spesifikasi
 
-![Dashboard Jamaah](https://github.com/maisarohfebriyani/sistem-informasi-masjid/blob/main/public/screenshots/agenda.png?raw=true) 
-![Form Login](screenshots/login.png)
-![Dashboard Admin](screenshots/dashboard_admin.png)   
-![agenda](screenshots/agenda.png)
-![Form rekap kas masjid](screenshots/rekap_kas_masjid.png)
-![Form Setting](screenshots/setting.png)
+Link Google Docs SRS: https://docs.google.com/document/d/19Pts1xstaoCSR7SomiLYELAwhvzyIjCc/edit?usp=drive_link&ouid=116576798939974484967&rtpof=true&sd=true
 
 ## Demo Video
 
 Link demo video : [Tonton Video di YouTube/Drive](https://drive.google.com/...)
 
-## Dokumen Spesifikasi
+## Screenshot Tampilan Website
 
-Link Google Docs SRS: https://docs.google.com/document/d/19Pts1xstaoCSR7SomiLYELAwhvzyIjCc/edit?usp=drive_link&ouid=116576798939974484967&rtpof=true&sd=true
+![Dashboard Jamaah](https://github.com/maisarohfebriyani/sistem-informasi-masjid/blob/main/public/screenshots/agenda.png?raw=true) 
+![Form Login](https://github.com/maisarohfebriyani/sistem-informasi-masjid/blob/main/public/screenshots/login.png?raw=true)
+![Dashboard Admin](https://github.com/maisarohfebriyani/sistem-informasi-masjid/blob/main/public/screenshots/dashboard_admin.png?raw=true)   
+![agenda](https://github.com/maisarohfebriyani/sistem-informasi-masjid/blob/main/public/screenshots/agenda.png?raw=true)
+![Form rekap kas masjid](https://github.com/maisarohfebriyani/sistem-informasi-masjid/blob/main/public/screenshots/rekap_kas_masjid.png?raw=true)
+![Form Setting](https://github.com/maisarohfebriyani/sistem-informasi-masjid/blob/main/public/screenshots/setting.png?raw=true)
 
 ---
 
