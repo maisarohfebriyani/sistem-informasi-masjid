@@ -28,29 +28,29 @@ Website ini adalah proyek sistem informasi masjid berbasis web yang bertujuan un
    - **Peran**: QA & Dokumentasi  
    - **Tugas**: Menyusun dokumentasi spesifikasi kebutuhan (SRS), mockup, dan pengujian fungsionalitas sistem.
 
-## 🧰 Teknologi yang Digunakan
+## Teknologi yang Digunakan
 
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: PHP (CodeIgniter 4 Framework)
 - **Database**: MySQL
 - **Tools**: GitHub, Google Docs, Canva (mockup)
 
-## 📷 Screenshot Tampilan Websi
+## Screenshot Tampilan Websi
 
-![Dashboard Jamaah](screenshots/dashboard_jamaah.png) 
+![Dashboard Jamaah](https://github.com/maisarohfebriyani/sistem-informasi-masjid/blob/main/public/screenshots/agenda.png?raw=true) 
 ![Form Login](screenshots/login.png)
 ![Dashboard Admin](screenshots/dashboard_admin.png)   
 ![agenda](screenshots/agenda.png)
 ![Form rekap kas masjid](screenshots/rekap_kas_masjid.png)
 ![Form Setting](screenshots/setting.png)
 
-## 🎥 Demo Video
+## Demo Video
 
 Link demo video : [Tonton Video di YouTube/Drive](https://drive.google.com/...)
 
-## 📄 Dokumen Spesifikasi
+## Dokumen Spesifikasi
 
-Link Google Docs SRS: [Klik di sini untuk membuka SRS SIMASJID] https://docs.google.com/document/d/19Pts1xstaoCSR7SomiLYELAwhvzyIjCc/edit?usp=drive_link&ouid=116576798939974484967&rtpof=true&sd=true
+Link Google Docs SRS: https://docs.google.com/document/d/19Pts1xstaoCSR7SomiLYELAwhvzyIjCc/edit?usp=drive_link&ouid=116576798939974484967&rtpof=true&sd=true
 
 ---
 
