@@ -1,60 +1,56 @@
-# CodeIgniter 4 Framework
+# Sistem Informasi Masjid (SIMASJID)
 
-## What is CodeIgniter?
+Website ini adalah proyek sistem informasi masjid berbasis web yang bertujuan untuk membantu pengelolaan data dan informasi masjid secara digital. SIMASJID menyediakan fitur publik untuk jamaah dan fitur administrasi untuk pengurus masjid, seperti pengelolaan kas, agenda, qurban, dan donasi.
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+## Daftar Anggota Tim dan Pembagian Tugas
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+1. **Ni’matus Sa’adah** (NIM: 42422017)  
+   - **Peran**: Project Leader  
+   - **Tugas**: Koordinasi tim, setup GitHub repository, dokumentasi awal proyek.
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+2. **Mai Saroh Febriyani** (NIM: 42422037)  
+   - **Peran**: Frontend Developer  
+   - **Tugas**: Mendesain dan mengimplementasikan antarmuka pengguna menggunakan HTML, CSS, dan JavaScript.
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+3. **Nirvana Pretty Ali** (NIM: 42422038)  
+   - **Peran**: Backend Developer (Login & Register)  
+   - **Tugas**: Mengembangkan logika autentikasi pengguna dan manajemen sesi login.
 
-## Important Change with index.php
+4. **Tuti Susilawati** (NIM: 42422041)  
+   - **Peran**: CRUD Developer  
+   - **Tugas**: Mengimplementasikan fitur CRUD untuk kas masjid, agenda, qurban, rekening, dan user.
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+5. **Lia Nur Cahyani** (NIM: 42422056)  
+   - **Peran**: Database Engineer  
+   - **Tugas**: Mendesain database, membuat struktur tabel, dan mengintegrasikan backend dengan database.
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+6. **Semua Anggota**  
+   - **Peran**: QA & Dokumentasi  
+   - **Tugas**: Menyusun dokumentasi spesifikasi kebutuhan (SRS), mockup, dan pengujian fungsionalitas sistem.
 
-**Please** read the user guide for a better explanation of how CI4 works!
+## 🧰 Teknologi yang Digunakan
 
-## Repository Management
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: PHP (CodeIgniter 4 Framework)
+- **Database**: MySQL
+- **Tools**: GitHub, Google Docs, Canva (mockup)
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+## 📷 Screenshot Tampilan Websi
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+![Dashboard Jamaah](screenshots/dashboard_jamaah.png) 
+![Form Login](screenshots/login.png)
+![Dashboard Admin](screenshots/dashboard_admin.png)   
+![agenda](screenshots/agenda.png)
+![Form rekap kas masjid](screenshots/rekap_kas_masjid.png)
+![Form Setting](screenshots/setting.png)
 
-## Contributing
+## 🎥 Demo Video
 
-We welcome contributions from the community.
+Link demo video : [Tonton Video di YouTube/Drive](https://drive.google.com/...)
 
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
+## 📄 Dokumen Spesifikasi
 
-## Server Requirements
+Link Google Docs SRS: [Klik di sini untuk membuka SRS SIMASJID] https://docs.google.com/document/d/19Pts1xstaoCSR7SomiLYELAwhvzyIjCc/edit?usp=drive_link&ouid=116576798939974484967&rtpof=true&sd=true
 
-PHP version 8.1 or higher is required, with the following extensions installed:
+---
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> - The end of life date for PHP 8.1 will be December 31, 2025.
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
