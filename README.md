@@ -35,7 +35,7 @@ Link Google Docs SRS: [lihat dokumen](https://docs.google.com/document/d/19Pts1x
 
 ## Demo Video
 
-Link demo video : [lihat video demo](https://drive.google.com/file/d/10JqBF03x3p8RPWJnH2Y14xiMNdUIftUn/view?usp=drivesdk)
+Link demo video : [lihat video demo](https://drive.google.com/file/d/10SpcUe47L5JRfyTLBvcTAtaEOlQLTej1/view?usp=drivesdk)
 
 ## Screenshot Tampilan Website
 
