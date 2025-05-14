@@ -4,29 +4,23 @@ Website ini adalah proyek sistem informasi masjid berbasis web yang bertujuan un
 
 ## Daftar Anggota Tim dan Pembagian Tugas
 
-1. **Ni’matus Sa’adah** (NIM: 42422017)  
-   - **Peran**: Project Leader  
-   - **Tugas**: Koordinasi tim, setup GitHub repository, dokumentasi awal proyek.
+1. **Mai Saroh Febriyani** (NIM: 42422037)  
+   Project Leader + setup repositori GitHub, dokumentasi awal.
 
-2. **Mai Saroh Febriyani** (NIM: 42422037)  
-   - **Peran**: Frontend Developer  
-   - **Tugas**: Mendesain dan mengimplementasikan antarmuka pengguna menggunakan HTML, CSS, dan JavaScript.
+2. **Ni’matus Sa’adahi** (NIM: 42422017)  
+   Desain dan implementasi frontend (UI/UX, HTML/CSS/JS)
 
-3. **Nirvana Pretty Ali** (NIM: 42422038)  
-   - **Peran**: Backend Developer (Login & Register)  
-   - **Tugas**: Mengembangkan logika autentikasi pengguna dan manajemen sesi login.
+3. **Tuti Susilawati** (NIM: 42422041)  
+   Backend dan logika autentikasi (login/register)
 
-4. **Tuti Susilawati** (NIM: 42422041)  
-   - **Peran**: CRUD Developer  
-   - **Tugas**: Mengimplementasikan fitur CRUD untuk kas masjid, agenda, qurban, rekening, dan user.
+4. **Lia Nur Cahyani** (NIM: 42422056)  
+   CRUD dan pengelolaan data pengguna
 
-5. **Lia Nur Cahyani** (NIM: 42422056)  
-   - **Peran**: Database Engineer  
-   - **Tugas**: Mendesain database, membuat struktur tabel, dan mengintegrasikan backend dengan database.
+5. **Nirvana Pretty Ali** (NIM: 42422038)
+   Desain dan implementasi database + integrasi backend
 
-6. **Semua Anggota**  
-   - **Peran**: QA & Dokumentasi  
-   - **Tugas**: Menyusun dokumentasi spesifikasi kebutuhan (SRS), mockup, dan pengujian fungsionalitas sistem.
+7. **Semua Anggota**
+   Dokumentasi spesifikasi kebutuhan + pengujian fungsionalitas
 
 ## Teknologi yang Digunakan
 
@@ -37,11 +31,11 @@ Website ini adalah proyek sistem informasi masjid berbasis web yang bertujuan un
 
 ## Dokumen Spesifikasi
 
-Link Google Docs SRS: https://docs.google.com/document/d/19Pts1xstaoCSR7SomiLYELAwhvzyIjCc/edit?usp=drive_link&ouid=116576798939974484967&rtpof=true&sd=true
+Link Google Docs SRS: [lihat dokumen](https://docs.google.com/document/d/19Pts1xstaoCSR7SomiLYELAwhvzyIjCc/edit?usp=drive_link&ouid=116576798939974484967&rtpof=true&sd=true)
 
 ## Demo Video
 
-Link demo video : [Tonton Video di YouTube/Drive](https://drive.google.com/...)
+Link demo video : [lihat video demo](https://drive.google.com/file/d/10JqBF03x3p8RPWJnH2Y14xiMNdUIftUn/view?usp=drivesdk)
 
 ## Screenshot Tampilan Website
 
