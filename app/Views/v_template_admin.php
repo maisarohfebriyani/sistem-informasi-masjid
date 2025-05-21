@@ -119,13 +119,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </a>
             <ul class="nav nav-treeview">
             <li class="nav-item">
-                <a href="#" class="nav-link <?= $menu == 'kas-masuk' ? 'active' : '' ?>">
+                <a href="<?= base_url('KasMasjid/KasMasuk') ?>" class="nav-link <?= $menu == 'kas-masuk' ? 'active' : '' ?>">
                   <i class="far fa-circle nav-icon text-success"></i>
                   <p>Kas Masuk</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="<?= base_url('KasMasjid/KasKeluar') ?>" class="nav-link">
                   <i class="far fa-circle nav-icon text-danger"></i>
                   <p>Kas Keluar</p>
                 </a>

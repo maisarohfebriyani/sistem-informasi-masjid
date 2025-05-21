@@ -36,5 +36,9 @@ $routes->get('agenda/hapus/(:num)', 'Agenda::hapus/$1');
 $routes->get('agenda/edit/(:num)', 'Agenda::edit/$1');
 $routes->post('agenda/update/(:num)', 'Agenda::updateData/$1');
 $routes->get('KasMasjid', 'KasMasjid::index');  // URI huruf besar
+$routes->get('KasMasjid/KasMasuk', 'KasMasjid::KasMasuk');
+$routes->get('KasMasjid/KasMasuk', 'KasMasjid::KasMasuk');
+$routes->get('KasMasjid/KasKeluar', 'KasMasjid::KasKeluar');
+
 
 
