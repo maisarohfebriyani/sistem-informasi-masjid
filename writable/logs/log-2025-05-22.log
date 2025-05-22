@@ -1,0 +1,63 @@
+DEBUG - 2025-05-22 05:48:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-22 05:48:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-22 05:48:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-22 06:28:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-22 06:48:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-22 06:48:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-22 06:49:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-22 06:49:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-22 06:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-22 06:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-22 06:54:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-22 06:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-22 06:59:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-22 06:59:48 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: POST, Route: KasMasjid/InsertKasKeluar]
+in SYSTEMPATH\Database\BaseConnection.php on line 941.
+ 1 SYSTEMPATH\Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\KasMasjid.php(81): CodeIgniter\Model->__call('InsertData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasMasjid->InsertKasKeluar()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasMasjid))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-22 07:03:33 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: POST, Route: KasMasjid/InsertKasKeluar]
+in SYSTEMPATH\Database\BaseConnection.php on line 941.
+ 1 SYSTEMPATH\Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\KasMasjid.php(81): CodeIgniter\Model->__call('InsertData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasMasjid->InsertKasKeluar()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasMasjid))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-22 07:04:49 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: POST, Route: KasMasjid/InsertKasKeluar]
+in SYSTEMPATH\Database\BaseConnection.php on line 941.
+ 1 SYSTEMPATH\Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\KasMasjid.php(81): CodeIgniter\Model->__call('InsertData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasMasjid->InsertKasKeluar()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasMasjid))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-22 07:07:02 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: POST, Route: KasMasjid/InsertKasKeluar]
+in SYSTEMPATH\Database\BaseConnection.php on line 941.
+ 1 SYSTEMPATH\Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\KasMasjid.php(81): CodeIgniter\Model->__call('InsertData', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasMasjid->InsertKasKeluar()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasMasjid))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-22 07:08:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-22 07:08:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

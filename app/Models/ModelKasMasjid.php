@@ -25,5 +25,15 @@ class ModelKasMasjid extends Model
         ->get()->getResultArray();
     }
 
+    public function InsertKasMasuk($data)
+    {
+        $this->db->table('tbl_kas_masjid')->insert($data);
+    }
+
+    public function InsertKasKeluar($data)
+    {
+        $this->db->table('tbl_kas_masjid')->insert($data);
+    }
+
 
 }

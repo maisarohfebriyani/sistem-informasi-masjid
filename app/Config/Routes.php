@@ -39,6 +39,8 @@ $routes->get('KasMasjid', 'KasMasjid::index');  // URI huruf besar
 $routes->get('KasMasjid/KasMasuk', 'KasMasjid::KasMasuk');
 $routes->get('KasMasjid/KasMasuk', 'KasMasjid::KasMasuk');
 $routes->get('KasMasjid/KasKeluar', 'KasMasjid::KasKeluar');
+$routes->post('KasMasjid/InsertKasMasuk', 'KasMasjid::InsertKasMasuk');
+$routes->post('KasMasjid/InsertKasKeluar', 'KasMasjid::InsertKasKeluar');
 
 
 
