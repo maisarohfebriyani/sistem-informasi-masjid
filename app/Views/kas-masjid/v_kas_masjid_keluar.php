@@ -47,7 +47,12 @@ if ($kas == null) {
               <td><?= $value['tanggal'] ?></td> 
               <td><?= $value['ket'] ?></td>
               <td class="text-right">Rp. <?= number_format($value['kas_keluar'], 0) ?></td>
-              
+              <td class="text-center">
+                <button type="button" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#modal-edit<?= $value['id_kas'] ?>"><i class="fas fa-pencil-alt"></i>
+                </button>
+                <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#modal-delete<?= $value['id_kas'] ?>"><i class="fas fa-trash"></i>
+                </button>
+              </td>
             </tr>
           <?php endforeach; ?>
         </tbody>
@@ -61,7 +66,7 @@ if ($kas == null) {
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header bg-danger">
-              <h4 class="modal-title">Kas Keluar</h4>
+              <h4 class="modal-title">Tambah Kas Keluar</h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -91,4 +96,41 @@ if ($kas == null) {
         </div>
         <!-- /.modal-dialog -->
       </div>
+
+      <!-- Modal Edit -->
+<?php foreach ($kas as $value) : ?>
+  <div class="modal fade" id="modal-edit<?= $value['id_kas'] ?>">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-danger">
+          <h4 class="modal-title">Edit Kas Keluar</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <?= form_open('KasMasjid/UpdateKasKeluar/' . $value['id_kas']) ?>
+          <div class="form-group">
+            <label for="">Tanggal</label>
+            <input type="date" name="tanggal" value="<?= $value['tanggal'] ?>" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="">Keterangan</label>
+            <input name="ket" class="form-control" value="<?= $value['ket'] ?>" required>
+          </div>
+          <div class="form-group">
+            <label for="">Jumlah (Rp.)</label>
+            <input type="number" min="0" name="kas_keluar" value="<?= $value['kas_keluar'] ?>" class="form-control" required>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-danger">Simpan</button>
+          <?= form_close() ?>
+        </div>
+      </div>
+    </div>
+  </div>
+<?php endforeach; ?>
+
    

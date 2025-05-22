@@ -41,6 +41,8 @@ $routes->get('KasMasjid/KasMasuk', 'KasMasjid::KasMasuk');
 $routes->get('KasMasjid/KasKeluar', 'KasMasjid::KasKeluar');
 $routes->post('KasMasjid/InsertKasMasuk', 'KasMasjid::InsertKasMasuk');
 $routes->post('KasMasjid/InsertKasKeluar', 'KasMasjid::InsertKasKeluar');
+$routes->post('KasMasjid/UpdateKasMasuk/(:num)', 'KasMasjid::UpdateKasMasuk/$1');
+$routes->post('KasMasjid/UpdateKasKeluar/(:num)', 'KasMasjid::UpdateKasKeluar/$1');
 
 
 

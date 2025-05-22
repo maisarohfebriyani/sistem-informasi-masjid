@@ -35,5 +35,20 @@ class ModelKasMasjid extends Model
         $this->db->table('tbl_kas_masjid')->insert($data);
     }
 
+    public function UpdateKasMasuk($data)
+    {
+        $this->db->table('tbl_kas_masjid')
+            ->where('id_kas', $data['id_kas'])
+            ->update($data);
+    }
+
+    public function UpdateKasKeluar($data)
+    {
+        $this->db->table('tbl_kas_masjid')
+            ->where('id_kas', $data['id_kas'])
+            ->update($data);
+    }
+
+
 
 }

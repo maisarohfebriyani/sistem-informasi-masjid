@@ -83,4 +83,32 @@ class KasMasjid extends BaseController
     return redirect()->to(base_url('KasMasjid/KasKeluar'));
     }
 
+    public function UpdateKasMasuk($id_kas)
+    {
+    $data = [
+        'id_kas' => $id_kas,
+        'tanggal' => $this->request->getPost('tanggal'),
+        'ket' => $this->request->getPost('ket'),
+        'kas_masuk' => $this->request->getPost('kas_masuk'), // jangan lupa update ini
+    ];
+
+    $this->ModelKasMasjid->UpdateKasMasuk($data);
+    session()->setFlashdata('pesan', 'Data Berhasil Diupdate!!');
+    return redirect()->to(base_url('KasMasjid/KasMasuk'));
+    }
+
+    public function UpdateKasKeluar($id_kas)
+    {
+    $data = [
+        'id_kas' => $id_kas,
+        'tanggal' => $this->request->getPost('tanggal'),
+        'ket' => $this->request->getPost('ket'),
+        'kas_keluar' => $this->request->getPost('kas_keluar'), // jangan lupa update ini
+    ];
+
+    $this->ModelKasMasjid->UpdateKasKeluar($data);
+    session()->setFlashdata('pesan', 'Data Berhasil Diupdate!!');
+    return redirect()->to(base_url('KasMasjid/KasKeluar'));
+    }
+
 }
