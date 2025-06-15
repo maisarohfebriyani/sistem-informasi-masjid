@@ -133,4 +133,25 @@ if ($kas == null) {
   </div>
 <?php endforeach; ?>
 
-   
+<?php foreach ($kas as $value) : ?>
+  <div class="modal fade" id="modal-delete<?= $value['id_kas'] ?>">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-success">
+          <h4 class="modal-title">Delete Kas Keluar</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Apakah Yakin Ingin Hapus Data ? <b><?= $value ['ket'] ?></b>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-warning" data-dismiss="modal">Tidak</button>
+          <a href="<?= base_url('KasMasjid/DeleteKasKeluar/' . $value['id_kas']) ?>" class="btn btn-danger">Ya</a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+<?php endforeach; ?>

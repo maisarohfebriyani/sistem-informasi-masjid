@@ -43,6 +43,10 @@ $routes->post('KasMasjid/InsertKasMasuk', 'KasMasjid::InsertKasMasuk');
 $routes->post('KasMasjid/InsertKasKeluar', 'KasMasjid::InsertKasKeluar');
 $routes->post('KasMasjid/UpdateKasMasuk/(:num)', 'KasMasjid::UpdateKasMasuk/$1');
 $routes->post('KasMasjid/UpdateKasKeluar/(:num)', 'KasMasjid::UpdateKasKeluar/$1');
+$routes->get('KasMasjid/DeleteKasMasuk/(:num)', 'KasMasjid::DeleteKasMasuk/$1');
+$routes->get('KasMasjid/DeleteKasKeluar/(:num)', 'KasMasjid::DeleteKasKeluar/$1');
+
+
 
 
 

@@ -42,12 +42,22 @@ class ModelKasMasjid extends Model
             ->update($data);
     }
 
-    public function UpdateKasKeluar($data)
+    public function UpdateData($data)
     {
         $this->db->table('tbl_kas_masjid')
             ->where('id_kas', $data['id_kas'])
             ->update($data);
     }
+
+    public function DeleteKasMasuk($data)
+{
+    return $this->db->table('tbl_kas_masjid')->delete(['id_kas' => $data['id_kas']]);
+}
+
+public function DeleteKasKeluar($data)
+{
+    return $this->db->table('tbl_kas_masjid')->delete(['id_kas' => $data['id_kas']]);
+}
 
 
 
