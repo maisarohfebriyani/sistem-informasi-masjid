@@ -12,7 +12,7 @@ class Feature extends BaseConfig
     /**
      * Use improved new auto routing instead of the legacy version.
      */
-    public bool $autoRoutesImproved = true;
+    public bool $autoRoutesImproved = false;
 
     /**
      * Use filter execution order in 4.4 or before.
@@ -34,4 +34,8 @@ class Feature extends BaseConfig
      * Enabling strict comparison will also consider the region code (ISO 3166-1 alpha-2).
      */
     public bool $strictLocaleNegotiation = false;
+
+    public bool $translateUriToCamelCase = true; // matikan ini
+
+
 }

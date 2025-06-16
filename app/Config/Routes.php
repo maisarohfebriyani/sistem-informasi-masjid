@@ -46,6 +46,14 @@ $routes->post('KasMasjid/UpdateKasMasuk/(:num)', 'KasMasjid::UpdateKasMasuk/$1')
 $routes->post('KasMasjid/UpdateKasKeluar/(:num)', 'KasMasjid::UpdateKasKeluar/$1');
 $routes->get('KasMasjid/DeleteKasMasuk/(:num)', 'KasMasjid::DeleteKasMasuk/$1');
 $routes->get('KasMasjid/DeleteKasKeluar/(:num)', 'KasMasjid::DeleteKasKeluar/$1');
+$routes->get('kas-sosial', 'KasSosial::index');
+$routes->get('kas-sosial/tambah', 'KasSosial::tambah');
+$routes->post('kas-sosial/simpan', 'KasSosial::simpan');
+$routes->get('kas-sosial/edit/(:num)', 'KasSosial::edit/$1');
+$routes->post('kas-sosial/update/(:num)', 'KasSosial::update/$1');
+$routes->get('kas-sosial/hapus/(:num)', 'KasSosial::hapus/$1');
+
+
 
 
 
