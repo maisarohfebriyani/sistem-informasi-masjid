@@ -18,13 +18,14 @@ $routes->setTranslateURIDashes(true); // Aktifkan agar kas-masjid -> KasMasjid
 
 $routes->set404Override();
 // AUTO ROUTER SETTINGS
-$routes->setAutoRoute(false); // Tidak gunakan Auto Routing Improved
+$routes->setAutoRoute(true); // Tidak gunakan Auto Routing Improved
 
 // Daftar route manual
 $routes->get('/', 'Home::index');         
 $routes->get('home', 'Home::index');      
-$routes->get('admin', 'Admin::index');    
-$routes->get('admin/setting', 'Admin::setting'); 
+$routes->get('Admin', 'Admin::index');   
+$routes->get('Admin/setting', 'Admin::setting'); 
+$routes->post('Admin/updatesetting', 'Admin::UpdateSetting');
 $routes->get('login', 'Login::index');    
 $routes->post('login/ceklogin', 'Login::ceklogin'); 
 $routes->get('register', 'Register::index');

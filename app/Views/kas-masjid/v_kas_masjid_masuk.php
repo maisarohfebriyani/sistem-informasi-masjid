@@ -9,7 +9,7 @@
     }
   ?>
   <div class="alert alert-success alert-dismissible">
-    <h5><i class="icon fas fa-info"></i> Total Pemasukan Kas Masjid</h5>
+    <h5><i class="fas fa-solid fa-money-bill-wave"></i> Total Pemasukan Kas Masjid</h5>
     <h3>Rp. <?= number_format(array_sum($pemasukan), 0) ?></h3>
   </div>
 </div>

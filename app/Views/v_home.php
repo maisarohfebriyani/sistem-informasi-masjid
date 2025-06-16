@@ -128,16 +128,45 @@
 
 <div class="col-lg-12">
         <div class="row">
+<div class="col-md-12">
+<?php 
+if ($kas == null) {
+    $pemasukan[]= 0;
+    $pengeluaran[]= 0;
 
-          <div class="col-md-4">
+}else {
+    foreach ($kas as $key => $value) {
+        $pemasukan[] = $value['kas_masuk'];
+        $pengeluaran[] = $value['kas_keluar'];
+    } 
+}
+$saldo_masjid = array_sum($pemasukan) - array_sum($pengeluaran);
+        ?>
+</div>
+
+<div class="col-md-12">
+<?php 
+if ($kas_s == null) {
+    $pemasukan_s[]= 0;
+    $pengeluaran_s[]= 0;
+
+}else {
+    foreach ($kas_s as $key => $value) {
+        $pemasukan_s[] = $value['kas_masuk'];
+        $pengeluaran_s[] = $value['kas_keluar'];
+    } 
+}
+$saldo_sosial = array_sum($pemasukan_s) - array_sum($pengeluaran_s);
+        ?>
+</div>
+          <div class="col-md-6">
             <div class="info-box">
               <span class="info-box-icon bg-primary elevation-1"><i class="fas fa-money-bill-wave"></i></span>
 
               <div class="info-box-content">
-                <span class="info-box-text">Sisa Kas</span>
+                <span class="info-box-text">Saldo Kas Masjid</span>
                 <span class="info-box-number">
-                  10
-                  <small>%</small>
+                  Rp. <?= number_format ($saldo_masjid, 0)?>
                 </span>
               </div>
               <!-- /.info-box-content -->
@@ -145,27 +174,13 @@
             <!-- /.info-box -->
           </div>
           <!-- /.col -->
-          <div class="col-md-4">
+          <div class="col-md-6">
             <div class="info-box mb-3">
-              <span class="info-box-icon bg-success elevation-1"><i class="fas fa-money-bill-wave"></i></span>
+              <span class="info-box-icon bg-success elevation-1"><i class="fas fa-hand-holding-heart"></i></span>
 
               <div class="info-box-content">
-                <span class="info-box-text">Kas Masuk</span>
-                <span class="info-box-number">41,410</span>
-              </div>
-              <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-          </div>
-          <!-- /.col -->
-
-          <div class="col-md-4">
-            <div class="info-box mb-3">
-              <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-money-bill-wave"></i></span>
-
-              <div class="info-box-content">
-                <span class="info-box-text">Kas Keluar</span>
-                <span class="info-box-number">760</span>
+                <span class="info-box-text">Saldo Kas Sosial</span>
+                Rp. <?= number_format ($saldo_sosial, 0)?>
               </div>
               <!-- /.info-box-content -->
             </div>

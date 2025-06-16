@@ -80,7 +80,7 @@ class Login extends BaseController
             ]);
 
             // Redirect ke menu admin
-            return redirect()->to('/admin')->with('pesan', 'Login berhasil. Selamat datang!');
+            return redirect()->to('/Admin')->with('pesan', 'Login berhasil. Selamat datang!');
         }
 
         return redirect()->to('/login')

@@ -3,15 +3,22 @@
 namespace App\Controllers;
 use App\Models\ModelHome;
 use App\Models\ModelAdmin;
+use App\Models\ModelKasMasjid;
+use App\Models\ModelKasSosial;
 
 class Home extends BaseController
 {
     protected $ModelHome;
+    protected $ModelKasMasjid;
+    protected $ModelKasSosial;
 
     public function __construct()
     {
         $this->ModelHome = new ModelHome(); 
         $this->ModelAdmin = new ModelAdmin();
+        $this->ModelKasMasjid = new ModelKasMasjid();
+        $this->ModelKasSosial = new ModelKasSosial();
+
     }
 
     public function index()
@@ -26,6 +33,9 @@ class Home extends BaseController
             'judul' => 'Home',
             'page'  => 'v_home', 
             'waktu' =>  $waktu,
+            'kas'       => $this->ModelKasMasjid->AllData(),
+            'kas_s'       => $this->ModelKasSosial->AllData(),
+
         ];
 
         return view('v_tamplate', $data); // Memanggil view template dengan data

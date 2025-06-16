@@ -15,7 +15,7 @@ $saldoakhir = array_sum($pemasukan) - array_sum($pengeluaran);
         ?>
 
         <div class="alert alert-primary alert-dismissible">
-                  <h5><i class="icon fas fa-info"></i> Saldo Kas Masjid</h5>
+                  <h5><i class="fas fa-solid fa-money-bill-wave"></i> Saldo Kas Masjid</h5>
                   Pemasukan : Rp. <?= number_format(array_sum($pemasukan), 0) ?> <br>
                   Pengeluaran : Rp. <?= number_format(array_sum($pengeluaran), 0) ?> <br>
                   <hr>
