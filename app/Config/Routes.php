@@ -52,6 +52,12 @@ $routes->post('kas-sosial/simpan', 'KasSosial::simpan');
 $routes->get('kas-sosial/edit/(:num)', 'KasSosial::edit/$1');
 $routes->post('kas-sosial/update/(:num)', 'KasSosial::update/$1');
 $routes->get('kas-sosial/hapus/(:num)', 'KasSosial::hapus/$1');
+$routes->get('qurban/tahun', 'Qurban::Tahun/$1');
+$routes->post('tahun/insert-data', 'Tahun::insert_data');
+$routes->post('Tahun/Update-data/(:num)', 'Tahun::Update-data/$1');
+$routes->get('tahun/hapus/(:num)', 'Tahun::hapus/$1');
+
+
 
 
 

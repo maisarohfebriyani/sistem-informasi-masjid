@@ -99,16 +99,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <p>Agenda</p>
     </a>
 </li>
-
-
-
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-clock"></i>
-            <p>Waktu Sholat</p>
-          </a>
-        </li>
-
           <li class="nav-item <?= $menu == 'kas-masjid' ? 'menu-open' : '' ?>">
             <a href="#" class="nav-link <?= $menu == 'kas-masjid' ? 'active' : '' ?>">
               <i class="nav-icon fas fa-money-bill-wave"></i>
@@ -201,6 +191,30 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <span class="right badge badge-danger">New</span>
               </p>
             </a>
+          </li>
+
+          <li class="nav-item <?= $menu == 'qurban' ? 'menu-open' : '' ?>">
+            <a href="#" class="nav-link <?= $menu == 'qurban' ? 'active' : '' ?>">
+              <i class="nav-icon fas fa-box"></i>
+              <p>
+                Qurban
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+            <li class="nav-item">
+                <a href="<?= base_url('Tahun')?>" class="nav-link <?= $submenu == 'tahun-qurban' ? 'active' : '' ?>">
+                  <i class="far fa-circle nav-icon text-success"></i>
+                  <p>Tahun Qurban </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon text-danger"></i>
+                  <p>Peserta Qurban</p>
+                </a>
+              </li>
+            </ul>
           </li>
 
           <li class="nav-item">
