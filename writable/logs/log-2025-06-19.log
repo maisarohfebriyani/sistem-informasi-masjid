@@ -1,0 +1,484 @@
+DEBUG - 2025-06-19 05:35:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 05:46:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 05:46:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 05:46:22 --> Error: Class "App\Models\ModelPesertaQurban" not found
+[Method: GET, Route: PesertaQurban]
+in APPPATH\Controllers\PesertaQurban.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\PesertaQurban->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-19 05:52:56 --> mysqli_sql_exception: Table 'db-simasjid-ci4.kelompok' doesn't exist in C:\laragon\www\sistem-informasi-masjid\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\sistem-informasi-masjid\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\sistem-informasi-masjid\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\sistem-informasi-masjid\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\sistem-informasi-masjid\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\sistem-informasi-masjid\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\sistem-informasi-masjid\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\sistem-informasi-masjid\app\Controllers\PesertaQurban.php(25): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\sistem-informasi-masjid\system\CodeIgniter.php(933): App\Controllers\PesertaQurban->index()
+#8 C:\laragon\www\sistem-informasi-masjid\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+#9 C:\laragon\www\sistem-informasi-masjid\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\sistem-informasi-masjid\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\sistem-informasi-masjid\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\laragon\www\sistem-informasi-masjid\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-06-19 05:52:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db-simasjid-ci4.kelompok' doesn't exist
+[Method: GET, Route: PesertaQurban]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kelompok`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PesertaQurban.php(25): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 05:52:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db-simasjid-ci4.kelompok' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `kelompok`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `kelompok`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kelompok`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\PesertaQurban.php(25): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 05:52:56 --> [Caused by] mysqli_sql_exception: Table 'db-simasjid-ci4.kelompok' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `kelompok`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `kelompok`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `kelompok`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kelompok`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\PesertaQurban.php(25): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 08:42:15 --> Error: Object of type CodeIgniter\Database\MySQLi\Builder is not callable
+[Method: GET, Route: PesertaQurban/KelompokQurban/1]
+in APPPATH\Models\ModelTahun.php on line 18.
+ 1 APPPATH\Controllers\PesertaQurban.php(38): App\Models\ModelTahun->DetailData('1')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('1')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 08:43:15 --> Error: Object of type CodeIgniter\Database\MySQLi\Builder is not callable
+[Method: GET, Route: PesertaQurban/KelompokQurban/1]
+in APPPATH\Models\ModelTahun.php on line 18.
+ 1 APPPATH\Controllers\PesertaQurban.php(38): App\Models\ModelTahun->DetailData('1')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('1')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 08:44:04 --> Error: Object of type CodeIgniter\Database\MySQLi\Builder is not callable
+[Method: GET, Route: PesertaQurban/KelompokQurban/1]
+in APPPATH\Models\ModelTahun.php on line 18.
+ 1 APPPATH\Controllers\PesertaQurban.php(38): App\Models\ModelTahun->DetailData('1')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('1')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 08:46:04 --> Error: Object of type CodeIgniter\Database\MySQLi\Builder is not callable
+[Method: GET, Route: PesertaQurban/KelompokQurban/1]
+in APPPATH\Models\ModelTahun.php on line 18.
+ 1 APPPATH\Controllers\PesertaQurban.php(38): App\Models\ModelTahun->DetailData('1')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('1')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 09:20:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 11:28:39 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: PesertaQurban]
+in SYSTEMPATH\Database\BaseConnection.php on line 941.
+ 1 SYSTEMPATH\Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(273): CodeIgniter\Model->builder()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PesertaQurban.php(25): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 11:29:32 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: PesertaQurban]
+in SYSTEMPATH\Database\BaseConnection.php on line 941.
+ 1 SYSTEMPATH\Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(273): CodeIgniter\Model->builder()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PesertaQurban.php(25): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 11:29:35 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: PesertaQurban]
+in SYSTEMPATH\Database\BaseConnection.php on line 941.
+ 1 SYSTEMPATH\Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(273): CodeIgniter\Model->builder()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PesertaQurban.php(25): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 17:05:31 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: PesertaQurban]
+in SYSTEMPATH\Database\BaseConnection.php on line 941.
+ 1 SYSTEMPATH\Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(273): CodeIgniter\Model->builder()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PesertaQurban.php(25): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 17:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 17:05:41 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: PesertaQurban]
+in SYSTEMPATH\Database\BaseConnection.php on line 941.
+ 1 SYSTEMPATH\Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(273): CodeIgniter\Model->builder()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\PesertaQurban.php(25): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 17:06:47 --> ErrorException: Undefined property: App\Controllers\PesertaQurban::$KelompokQurban
+[Method: GET, Route: PesertaQurban/KelompokQurban/1]
+in APPPATH\Controllers\PesertaQurban.php on line 40.
+ 1 APPPATH\Controllers\PesertaQurban.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PesertaQurban::$KelompokQurban', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Controllers\\PesertaQurban.php', 40)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('1')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 17:08:44 --> Error: Class "App\Models\ModelKelompokQurban" not found
+[Method: GET, Route: PesertaQurban/KelompokQurban/1]
+in APPPATH\Controllers\PesertaQurban.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\PesertaQurban->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 17:09:58 --> Error: Class "App\Models\ModelKelompokQurban" not found
+[Method: GET, Route: PesertaQurban]
+in APPPATH\Controllers\PesertaQurban.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\PesertaQurban->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 17:10:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 17:10:04 --> Error: Class "App\Models\ModelKelompokQurban" not found
+[Method: GET, Route: PesertaQurban]
+in APPPATH\Controllers\PesertaQurban.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\PesertaQurban->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 17:10:39 --> ErrorException: Undefined property: App\Controllers\PesertaQurban::$KelompokQurban
+[Method: GET, Route: PesertaQurban/KelompokQurban/1]
+in APPPATH\Controllers\PesertaQurban.php on line 42.
+ 1 APPPATH\Controllers\PesertaQurban.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PesertaQurban::$KelompokQurban', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Controllers\\PesertaQurban.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('1')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 17:11:17 --> ErrorException: Undefined property: App\Controllers\PesertaQurban::$KelompokQurban
+[Method: GET, Route: PesertaQurban/KelompokQurban/1]
+in APPPATH\Controllers\PesertaQurban.php on line 42.
+ 1 APPPATH\Controllers\PesertaQurban.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PesertaQurban::$KelompokQurban', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Controllers\\PesertaQurban.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('1')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 17:13:10 --> Error: Class "App\Models\ModelKelompokQurban" not found
+[Method: GET, Route: PesertaQurban/KelompokQurban/1]
+in APPPATH\Controllers\PesertaQurban.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\PesertaQurban->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-19 17:13:55 --> mysqli_sql_exception: Table 'db-simasjid-ci4.tbl_kelompok_qurban' doesn't exist in C:\laragon\www\sistem-informasi-masjid\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\sistem-informasi-masjid\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\sistem-informasi-masjid\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\sistem-informasi-masjid\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\sistem-informasi-masjid\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\sistem-informasi-masjid\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\sistem-informasi-masjid\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\sistem-informasi-masjid\app\Models\ModelKelompokQurban.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\sistem-informasi-masjid\app\Controllers\PesertaQurban.php(41): App\Models\ModelKelompokQurban->AllDataKelompok('1')
+#8 C:\laragon\www\sistem-informasi-masjid\system\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('1')
+#9 C:\laragon\www\sistem-informasi-masjid\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+#10 C:\laragon\www\sistem-informasi-masjid\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\sistem-informasi-masjid\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\sistem-informasi-masjid\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\laragon\www\sistem-informasi-masjid\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-06-19 17:13:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db-simasjid-ci4.tbl_kelompok_qurban' doesn't exist
+[Method: GET, Route: PesertaQurban/KelompokQurban/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_kelompok_qurban`
+WHERE `id_tahun` = :id_tahun:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ModelKelompokQurban.php(16): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\PesertaQurban.php(41): App\Models\ModelKelompokQurban->AllDataKelompok('1')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 17:13:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db-simasjid-ci4.tbl_kelompok_qurban' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_kelompok_qurban`
+WHERE `id_tahun` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_kelompok_qurban`
+WHERE `id_tahun` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_kelompok_qurban`
+WHERE `id_tahun` = :id_tahun:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\ModelKelompokQurban.php(16): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\PesertaQurban.php(41): App\Models\ModelKelompokQurban->AllDataKelompok('1')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('1')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 17:13:55 --> [Caused by] mysqli_sql_exception: Table 'db-simasjid-ci4.tbl_kelompok_qurban' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `tbl_kelompok_qurban`
+WHERE `id_tahun` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_kelompok_qurban`
+WHERE `id_tahun` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_kelompok_qurban`
+WHERE `id_tahun` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_kelompok_qurban`
+WHERE `id_tahun` = :id_tahun:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ModelKelompokQurban.php(16): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\PesertaQurban.php(41): App\Models\ModelKelompokQurban->AllDataKelompok('1')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('1')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 17:23:13 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: PesertaQurban/KelompokQurban/index3.html]
+in APPPATH\Controllers\PesertaQurban.php on line 36.
+ 1 APPPATH\Controllers\PesertaQurban.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Controllers\\PesertaQurban.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('index3.html')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 17:41:52 --> ErrorException: Undefined array key "ketua_kelompok"
+[Method: GET, Route: PesertaQurban/KelompokQurban/1]
+in APPPATH\Views\qurban\v_kelompok_qurban.php on line 27.
+ 1 APPPATH\Views\qurban\v_kelompok_qurban.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ketua_kelompok"', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\qurban\\v_kelompok_qurban.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\qurban\\v_kelompok_qurban.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('qurban/v_kelompok_qurban', [], true)
+ 5 APPPATH\Views\v_template_admin.php(269): view('qurban/v_kelompok_qurban')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\v_template_admin.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 9 APPPATH\Controllers\PesertaQurban.php(43): view('v_template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('1')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 18:39:54 --> ErrorException: Undefined array key "ketua_kelompok"
+[Method: GET, Route: PesertaQurban/KelompokQurban/1]
+in APPPATH\Views\qurban\v_kelompok_qurban.php on line 27.
+ 1 APPPATH\Views\qurban\v_kelompok_qurban.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ketua_kelompok"', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\qurban\\v_kelompok_qurban.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\qurban\\v_kelompok_qurban.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('qurban/v_kelompok_qurban', [], true)
+ 5 APPPATH\Views\v_template_admin.php(269): view('qurban/v_kelompok_qurban')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\v_template_admin.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 9 APPPATH\Controllers\PesertaQurban.php(43): view('v_template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('1')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 18:43:48 --> ErrorException: Undefined array key "tahun_h"
+[Method: GET, Route: PesertaQurban/KelompokQurban/1]
+in APPPATH\Views\qurban\v_kelompok_qurban.php on line 18.
+ 1 APPPATH\Views\qurban\v_kelompok_qurban.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tahun_h"', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\qurban\\v_kelompok_qurban.php', 18)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\qurban\\v_kelompok_qurban.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('qurban/v_kelompok_qurban', [], true)
+ 5 APPPATH\Views\v_template_admin.php(269): view('qurban/v_kelompok_qurban')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\v_template_admin.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 9 APPPATH\Controllers\PesertaQurban.php(43): view('v_template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('1')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 18:44:09 --> ErrorException: Undefined array key "tahun_h"
+[Method: GET, Route: PesertaQurban/KelompokQurban/1]
+in APPPATH\Views\qurban\v_kelompok_qurban.php on line 18.
+ 1 APPPATH\Views\qurban\v_kelompok_qurban.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tahun_h"', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\qurban\\v_kelompok_qurban.php', 18)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\qurban\\v_kelompok_qurban.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('qurban/v_kelompok_qurban', [], true)
+ 5 APPPATH\Views\v_template_admin.php(269): view('qurban/v_kelompok_qurban')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\v_template_admin.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 9 APPPATH\Controllers\PesertaQurban.php(43): view('v_template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('1')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 18:46:59 --> ErrorException: Undefined array key "ketua_kelompok"
+[Method: GET, Route: PesertaQurban/KelompokQurban/1]
+in APPPATH\Views\qurban\v_kelompok_qurban.php on line 25.
+ 1 APPPATH\Views\qurban\v_kelompok_qurban.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ketua_kelompok"', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\qurban\\v_kelompok_qurban.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\qurban\\v_kelompok_qurban.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('qurban/v_kelompok_qurban', [], true)
+ 5 APPPATH\Views\v_template_admin.php(269): view('qurban/v_kelompok_qurban')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\v_template_admin.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 9 APPPATH\Controllers\PesertaQurban.php(43): view('v_template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('1')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 18:50:07 --> ParseError: syntax error, unexpected token "endforeach"
+[Method: GET, Route: PesertaQurban/KelompokQurban/1]
+in APPPATH\Views\qurban\v_kelompok_qurban.php on line 55.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('qurban/v_kelompok_qurban', [], true)
+ 3 APPPATH\Views\v_template_admin.php(269): view('qurban/v_kelompok_qurban')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\PesertaQurban.php(43): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('1')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 18:53:04 --> ErrorException: Undefined array key "ketua_kelompok"
+[Method: GET, Route: PesertaQurban/KelompokQurban/1]
+in APPPATH\Views\qurban\v_kelompok_qurban.php on line 25.
+ 1 APPPATH\Views\qurban\v_kelompok_qurban.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ketua_kelompok"', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\qurban\\v_kelompok_qurban.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\qurban\\v_kelompok_qurban.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('qurban/v_kelompok_qurban', [], true)
+ 5 APPPATH\Views\v_template_admin.php(269): view('qurban/v_kelompok_qurban')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\v_template_admin.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 9 APPPATH\Controllers\PesertaQurban.php(43): view('v_template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('1')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 18:54:24 --> ErrorException: Undefined array key "ketua_kelompok"
+[Method: GET, Route: PesertaQurban/KelompokQurban/1]
+in APPPATH\Views\qurban\v_kelompok_qurban.php on line 15.
+ 1 APPPATH\Views\qurban\v_kelompok_qurban.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ketua_kelompok"', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\qurban\\v_kelompok_qurban.php', 15)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\qurban\\v_kelompok_qurban.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('qurban/v_kelompok_qurban', [], true)
+ 5 APPPATH\Views\v_template_admin.php(269): view('qurban/v_kelompok_qurban')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\v_template_admin.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 9 APPPATH\Controllers\PesertaQurban.php(43): view('v_template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('1')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 19:27:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 19:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

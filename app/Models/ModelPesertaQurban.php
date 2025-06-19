@@ -1,16 +1,20 @@
 <?php
 
 namespace App\Models;
+
 use CodeIgniter\Model;
 
-class ModelTahun extends Model
+class ModelPesertaQurban extends Model
 {
-    protected $table      = 'tbl_tahun';
+     protected $table = 'tbl_tahun'; // ✅ Nama tabel database
     protected $primaryKey = 'id_tahun';
-
-    public function AllData()
+    protected $allowedFields = ['tahun_h', 'tahun_m'];
+    
+    public function AllDataKelompok($id_tahun)
     {
-        return $this->db->table($this->table)->get()->getResultArray();
+        return $this->db->table('tbl_kelompok')
+        ->where('id_tahun', $id_tahun)
+        ->get()->getResultArray();
     }
 
     public function DetailData($id_tahun)
