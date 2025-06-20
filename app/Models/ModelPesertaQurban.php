@@ -17,30 +17,19 @@ class ModelPesertaQurban extends Model
         ->get()->getResultArray();
     }
 
-    public function DetailData($id_tahun)
-    {
-        return $this->db->table($this->table)
-        ->where('id_tahun', $id_tahun)
+    public function DetailKelompok($id_kelompok)
+{
+    return $this->db->table('tbl_kelompok')
+        ->where('id_kelompok', $id_kelompok)
         ->get()->getRowArray();
-    }
+}
 
-    public function InsertData($data)
-    {
-        return $this->db->table($this->table)->insert($data);
-    }
+public function DeleteKelompok($id_kelompok)
+{
+    return $this->db->table('tbl_kelompok')
+        ->where('id_kelompok', $id_kelompok)
+        ->delete();
+}
 
-    public function DeleteData($id)
-    {
-        return $this->db->table($this->table)->where($this->primaryKey, $id)->Delete();
-    }
 
-    public function getDataById($id)
-    {
-        return $this->db->table($this->table)->where($this->primaryKey, $id)->get()->getRowArray();
-    }
-
-    public function UpdateData($id, $data)
-    {
-        return $this->db->table($this->table)->where($this->primaryKey, $id)->Update($data);
-    }
 }

@@ -1,0 +1,542 @@
+DEBUG - 2025-06-20 00:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 00:01:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 00:02:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 00:03:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 00:03:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 00:04:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 00:04:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 00:04:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 00:04:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 00:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 00:24:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-20 08:10:51 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\ModelTahun::insertkelompok
+[Method: POST, Route: PesertaQurban/insertKelompok]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\PesertaQurban.php(73): CodeIgniter\Model->__call('insertkelompok', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertkelompok()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-20 08:11:50 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\ModelTahun::insertkelompok
+[Method: POST, Route: PesertaQurban/insertKelompok]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\PesertaQurban.php(73): CodeIgniter\Model->__call('insertkelompok', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertkelompok()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-20 08:11:54 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\ModelTahun::insertkelompok
+[Method: POST, Route: PesertaQurban/insertKelompok]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\PesertaQurban.php(73): CodeIgniter\Model->__call('insertkelompok', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertkelompok()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-20 08:16:11 --> mysqli_sql_exception: Column 'id_tahun' cannot be null in C:\laragon\www\sistem-informasi-masjid\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\sistem-informasi-masjid\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\sistem-informasi-masjid\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\sistem-informasi-masjid\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\sistem-informasi-masjid\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\sistem-informasi-masjid\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\sistem-informasi-masjid\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\sistem-informasi-masjid\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\sistem-informasi-masjid\app\Models\ModelKelompokQurban.php(35): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\sistem-informasi-masjid\app\Controllers\PesertaQurban.php(73): App\Models\ModelKelompokQurban->insertKelompok(Array)
+#9 C:\laragon\www\sistem-informasi-masjid\system\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertkelompok()
+#10 C:\laragon\www\sistem-informasi-masjid\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+#11 C:\laragon\www\sistem-informasi-masjid\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\sistem-informasi-masjid\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\sistem-informasi-masjid\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\sistem-informasi-masjid\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-06-20 08:16:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_tahun' cannot be null
+[Method: POST, Route: PesertaQurban/insertKelompok]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (:id_tahun:, :nama_kelompok:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\ModelKelompokQurban.php(35): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\PesertaQurban.php(73): App\Models\ModelKelompokQurban->insertKelompok([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertkelompok()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-20 08:16:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_tahun' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (:id_tahun:, :nama_kelompok:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\ModelKelompokQurban.php(35): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\PesertaQurban.php(73): App\Models\ModelKelompokQurban->insertKelompok([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertkelompok()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-20 08:16:12 --> [Caused by] mysqli_sql_exception: Column 'id_tahun' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (:id_tahun:, :nama_kelompok:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ModelKelompokQurban.php(35): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\PesertaQurban.php(73): App\Models\ModelKelompokQurban->insertKelompok([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertkelompok()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-20 08:21:46 --> ErrorException: Undefined variable $data
+[Method: POST, Route: PesertaQurban/insertKelompok]
+in APPPATH\Models\ModelKelompokQurban.php on line 35.
+ 1 APPPATH\Models\ModelKelompokQurban.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Models\\ModelKelompokQurban.php', 35)
+ 2 APPPATH\Controllers\PesertaQurban.php(73): App\Models\ModelKelompokQurban->insertKelompok([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertkelompok()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-20 08:22:29 --> ErrorException: Undefined variable $id_kelompok
+[Method: POST, Route: PesertaQurban/insertKelompok]
+in APPPATH\Models\ModelKelompokQurban.php on line 35.
+ 1 APPPATH\Models\ModelKelompokQurban.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_kelompok', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Models\\ModelKelompokQurban.php', 35)
+ 2 APPPATH\Controllers\PesertaQurban.php(73): App\Models\ModelKelompokQurban->insertKelompok([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertkelompok()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-20 08:22:47 --> mysqli_sql_exception: Column 'id_tahun' cannot be null in C:\laragon\www\sistem-informasi-masjid\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\sistem-informasi-masjid\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\sistem-informasi-masjid\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\sistem-informasi-masjid\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\sistem-informasi-masjid\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\sistem-informasi-masjid\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\sistem-informasi-masjid\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\sistem-informasi-masjid\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\sistem-informasi-masjid\app\Models\ModelKelompokQurban.php(35): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\sistem-informasi-masjid\app\Controllers\PesertaQurban.php(73): App\Models\ModelKelompokQurban->insertKelompok(Array)
+#9 C:\laragon\www\sistem-informasi-masjid\system\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertkelompok()
+#10 C:\laragon\www\sistem-informasi-masjid\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+#11 C:\laragon\www\sistem-informasi-masjid\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\sistem-informasi-masjid\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\sistem-informasi-masjid\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\sistem-informasi-masjid\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-06-20 08:22:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_tahun' cannot be null
+[Method: POST, Route: PesertaQurban/insertKelompok]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (:id_tahun:, :nama_kelompok:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\ModelKelompokQurban.php(35): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\PesertaQurban.php(73): App\Models\ModelKelompokQurban->insertKelompok([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertkelompok()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-20 08:22:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_tahun' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (:id_tahun:, :nama_kelompok:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\ModelKelompokQurban.php(35): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\PesertaQurban.php(73): App\Models\ModelKelompokQurban->insertKelompok([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertkelompok()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-20 08:22:47 --> [Caused by] mysqli_sql_exception: Column 'id_tahun' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (:id_tahun:, :nama_kelompok:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ModelKelompokQurban.php(35): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\PesertaQurban.php(73): App\Models\ModelKelompokQurban->insertKelompok([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertkelompok()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-20 08:23:10 --> mysqli_sql_exception: Column 'id_tahun' cannot be null in C:\laragon\www\sistem-informasi-masjid\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\sistem-informasi-masjid\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\sistem-informasi-masjid\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\sistem-informasi-masjid\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\sistem-informasi-masjid\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\sistem-informasi-masjid\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\sistem-informasi-masjid\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\sistem-informasi-masjid\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\sistem-informasi-masjid\app\Models\ModelKelompokQurban.php(35): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\sistem-informasi-masjid\app\Controllers\PesertaQurban.php(73): App\Models\ModelKelompokQurban->insertKelompok(Array)
+#9 C:\laragon\www\sistem-informasi-masjid\system\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertkelompok()
+#10 C:\laragon\www\sistem-informasi-masjid\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+#11 C:\laragon\www\sistem-informasi-masjid\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\sistem-informasi-masjid\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\sistem-informasi-masjid\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\sistem-informasi-masjid\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-06-20 08:23:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_tahun' cannot be null
+[Method: POST, Route: PesertaQurban/insertKelompok]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (:id_tahun:, :nama_kelompok:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\ModelKelompokQurban.php(35): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\PesertaQurban.php(73): App\Models\ModelKelompokQurban->insertKelompok([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertkelompok()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-20 08:23:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_tahun' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (:id_tahun:, :nama_kelompok:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\ModelKelompokQurban.php(35): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\PesertaQurban.php(73): App\Models\ModelKelompokQurban->insertKelompok([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertkelompok()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-20 08:23:10 --> [Caused by] mysqli_sql_exception: Column 'id_tahun' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (:id_tahun:, :nama_kelompok:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ModelKelompokQurban.php(35): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\PesertaQurban.php(73): App\Models\ModelKelompokQurban->insertKelompok([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertkelompok()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-20 08:23:46 --> ErrorException: Undefined variable $id_kelompok
+[Method: POST, Route: PesertaQurban/insertKelompok]
+in APPPATH\Models\ModelKelompokQurban.php on line 36.
+ 1 APPPATH\Models\ModelKelompokQurban.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_kelompok', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Models\\ModelKelompokQurban.php', 36)
+ 2 APPPATH\Controllers\PesertaQurban.php(73): App\Models\ModelKelompokQurban->insertKelompok([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertkelompok()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-20 08:26:37 --> Error: Call to a member function getPost() on null
+[Method: POST, Route: PesertaQurban/insertKelompok]
+in APPPATH\Models\ModelKelompokQurban.php on line 36.
+ 1 APPPATH\Controllers\PesertaQurban.php(73): App\Models\ModelKelompokQurban->insertKelompok([...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertkelompok()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-20 08:27:02 --> Error: Call to a member function getPost() on null
+[Method: POST, Route: PesertaQurban/insertKelompok]
+in APPPATH\Models\ModelKelompokQurban.php on line 36.
+ 1 APPPATH\Controllers\PesertaQurban.php(73): App\Models\ModelKelompokQurban->insertKelompok([...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertkelompok()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-20 08:27:30 --> Error: Call to a member function getPost() on null
+[Method: POST, Route: PesertaQurban/insertKelompok]
+in APPPATH\Models\ModelKelompokQurban.php on line 36.
+ 1 APPPATH\Controllers\PesertaQurban.php(73): App\Models\ModelKelompokQurban->insertKelompok([...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertkelompok()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-20 08:31:41 --> Error: Call to a member function getPost() on null
+[Method: POST, Route: PesertaQurban/insertKelompok]
+in APPPATH\Models\ModelKelompokQurban.php on line 36.
+ 1 APPPATH\Controllers\PesertaQurban.php(72): App\Models\ModelKelompokQurban->insertKelompok([...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertKelompok()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-20 08:33:53 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\ModelKelompokQurban::insertKelompok
+[Method: POST, Route: PesertaQurban/insertKelompok]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\PesertaQurban.php(72): CodeIgniter\Model->__call('insertKelompok', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertKelompok()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-20 08:34:28 --> mysqli_sql_exception: Column 'id_tahun' cannot be null in C:\laragon\www\sistem-informasi-masjid\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\sistem-informasi-masjid\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\sistem-informasi-masjid\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\sistem-informasi-masjid\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\sistem-informasi-masjid\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\sistem-informasi-masjid\app\Models\ModelKelompokQurban.php(35): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\sistem-informasi-masjid\app\Controllers\PesertaQurban.php(72): App\Models\ModelKelompokQurban->insertKelompok(Array)
+#6 C:\laragon\www\sistem-informasi-masjid\system\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertKelompok()
+#7 C:\laragon\www\sistem-informasi-masjid\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+#8 C:\laragon\www\sistem-informasi-masjid\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\sistem-informasi-masjid\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\sistem-informasi-masjid\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\laragon\www\sistem-informasi-masjid\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-06-20 08:34:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_tahun' cannot be null
+[Method: POST, Route: PesertaQurban/insertKelompok]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (:id_tahun:, :nama_kelompok:)', [...], false)
+ 2 APPPATH\Models\ModelKelompokQurban.php(35): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\PesertaQurban.php(72): App\Models\ModelKelompokQurban->insertKelompok([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertKelompok()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-20 08:34:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_tahun' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (:id_tahun:, :nama_kelompok:)', [...], false)
+ 4 APPPATH\Models\ModelKelompokQurban.php(35): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\PesertaQurban.php(72): App\Models\ModelKelompokQurban->insertKelompok([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertKelompok()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-20 08:34:28 --> [Caused by] mysqli_sql_exception: Column 'id_tahun' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (:id_tahun:, :nama_kelompok:)', [...], false)
+ 5 APPPATH\Models\ModelKelompokQurban.php(35): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\PesertaQurban.php(72): App\Models\ModelKelompokQurban->insertKelompok([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertKelompok()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-20 08:39:22 --> mysqli_sql_exception: Column 'id_tahun' cannot be null in C:\laragon\www\sistem-informasi-masjid\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\sistem-informasi-masjid\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\sistem-informasi-masjid\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\sistem-informasi-masjid\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\sistem-informasi-masjid\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\sistem-informasi-masjid\app\Models\ModelKelompokQurban.php(35): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\sistem-informasi-masjid\app\Controllers\PesertaQurban.php(71): App\Models\ModelKelompokQurban->insertKelompok(Array)
+#6 C:\laragon\www\sistem-informasi-masjid\system\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertKelompok()
+#7 C:\laragon\www\sistem-informasi-masjid\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+#8 C:\laragon\www\sistem-informasi-masjid\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\sistem-informasi-masjid\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\sistem-informasi-masjid\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\laragon\www\sistem-informasi-masjid\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-06-20 08:39:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_tahun' cannot be null
+[Method: POST, Route: PesertaQurban/insertKelompok]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (:id_tahun:, :nama_kelompok:)', [...], false)
+ 2 APPPATH\Models\ModelKelompokQurban.php(35): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\PesertaQurban.php(71): App\Models\ModelKelompokQurban->insertKelompok([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertKelompok()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-20 08:39:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_tahun' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (:id_tahun:, :nama_kelompok:)', [...], false)
+ 4 APPPATH\Models\ModelKelompokQurban.php(35): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\PesertaQurban.php(71): App\Models\ModelKelompokQurban->insertKelompok([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertKelompok()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-20 08:39:22 --> [Caused by] mysqli_sql_exception: Column 'id_tahun' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (:id_tahun:, :nama_kelompok:)', [...], false)
+ 5 APPPATH\Models\ModelKelompokQurban.php(35): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\PesertaQurban.php(71): App\Models\ModelKelompokQurban->insertKelompok([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertKelompok()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-20 08:39:27 --> mysqli_sql_exception: Column 'id_tahun' cannot be null in C:\laragon\www\sistem-informasi-masjid\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\sistem-informasi-masjid\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\sistem-informasi-masjid\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\sistem-informasi-masjid\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\sistem-informasi-masjid\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\sistem-informasi-masjid\app\Models\ModelKelompokQurban.php(35): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\sistem-informasi-masjid\app\Controllers\PesertaQurban.php(71): App\Models\ModelKelompokQurban->insertKelompok(Array)
+#6 C:\laragon\www\sistem-informasi-masjid\system\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertKelompok()
+#7 C:\laragon\www\sistem-informasi-masjid\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+#8 C:\laragon\www\sistem-informasi-masjid\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\sistem-informasi-masjid\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\sistem-informasi-masjid\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\laragon\www\sistem-informasi-masjid\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-06-20 08:39:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_tahun' cannot be null
+[Method: POST, Route: PesertaQurban/insertKelompok]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (:id_tahun:, :nama_kelompok:)', [...], false)
+ 2 APPPATH\Models\ModelKelompokQurban.php(35): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\PesertaQurban.php(71): App\Models\ModelKelompokQurban->insertKelompok([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertKelompok()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-20 08:39:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_tahun' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (:id_tahun:, :nama_kelompok:)', [...], false)
+ 4 APPPATH\Models\ModelKelompokQurban.php(35): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\PesertaQurban.php(71): App\Models\ModelKelompokQurban->insertKelompok([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertKelompok()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-20 08:39:27 --> [Caused by] mysqli_sql_exception: Column 'id_tahun' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (:id_tahun:, :nama_kelompok:)', [...], false)
+ 5 APPPATH\Models\ModelKelompokQurban.php(35): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\PesertaQurban.php(71): App\Models\ModelKelompokQurban->insertKelompok([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertKelompok()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-20 08:43:44 --> mysqli_sql_exception: Column 'nama_kelompok' cannot be null in C:\laragon\www\sistem-informasi-masjid\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\sistem-informasi-masjid\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\sistem-informasi-masjid\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\sistem-informasi-masjid\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\sistem-informasi-masjid\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\sistem-informasi-masjid\app\Models\ModelKelompokQurban.php(35): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\sistem-informasi-masjid\app\Controllers\PesertaQurban.php(71): App\Models\ModelKelompokQurban->insertKelompok(Array)
+#6 C:\laragon\www\sistem-informasi-masjid\system\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertKelompok()
+#7 C:\laragon\www\sistem-informasi-masjid\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+#8 C:\laragon\www\sistem-informasi-masjid\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\sistem-informasi-masjid\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\sistem-informasi-masjid\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\laragon\www\sistem-informasi-masjid\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-06-20 08:43:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'nama_kelompok' cannot be null
+[Method: POST, Route: PesertaQurban/insertKelompok]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (:id_tahun:, :nama_kelompok:)', [...], false)
+ 2 APPPATH\Models\ModelKelompokQurban.php(35): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\PesertaQurban.php(71): App\Models\ModelKelompokQurban->insertKelompok([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertKelompok()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-20 08:43:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'nama_kelompok' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (\'1\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (\'1\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (:id_tahun:, :nama_kelompok:)', [...], false)
+ 4 APPPATH\Models\ModelKelompokQurban.php(35): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\PesertaQurban.php(71): App\Models\ModelKelompokQurban->insertKelompok([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertKelompok()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-20 08:43:44 --> [Caused by] mysqli_sql_exception: Column 'nama_kelompok' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (\'1\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (\'1\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (\'1\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_kelompok` (`id_tahun`, `nama_kelompok`) VALUES (:id_tahun:, :nama_kelompok:)', [...], false)
+ 5 APPPATH\Models\ModelKelompokQurban.php(35): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\PesertaQurban.php(71): App\Models\ModelKelompokQurban->insertKelompok([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->insertKelompok()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-20 08:44:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 09:06:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 09:41:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-20 09:41:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

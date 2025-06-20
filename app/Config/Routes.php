@@ -58,6 +58,11 @@ $routes->post('Tahun/Update-data/(:num)', 'Tahun::Update-data/$1');
 $routes->get('tahun/hapus/(:num)', 'Tahun::hapus/$1');
 $routes->get('/PesertaQurban', 'PesertaQurban::index');
 $routes->get('/peserta-qurban/kelompok/(:num)', 'PesertaQurban::KelompokQurban/$1');
+$routes->get('PesertaQurban/DeleteKelompok/(:num)/(:num)', 'PesertaQurban::DeleteKelompok/$1/$2');
+$routes->post('PesertaQurban/insertKelompok', 'PesertaQurban::insertKelompok');
+
+
+
 
 
 

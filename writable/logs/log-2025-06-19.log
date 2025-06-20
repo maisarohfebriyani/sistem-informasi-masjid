@@ -482,3 +482,208 @@ in APPPATH\Views\qurban\v_kelompok_qurban.php on line 15.
 15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 DEBUG - 2025-06-19 19:27:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-06-19 19:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 19:40:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 19:56:40 --> ErrorException: Undefined array key "ketua_kelompok"
+[Method: GET, Route: PesertaQurban/KelompokQurban/1]
+in APPPATH\Views\qurban\v_kelompok_qurban.php on line 18.
+ 1 APPPATH\Views\qurban\v_kelompok_qurban.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ketua_kelompok"', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\qurban\\v_kelompok_qurban.php', 18)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\qurban\\v_kelompok_qurban.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('qurban/v_kelompok_qurban', [], true)
+ 5 APPPATH\Views\v_template_admin.php(269): view('qurban/v_kelompok_qurban')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\v_template_admin.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 9 APPPATH\Controllers\PesertaQurban.php(43): view('v_template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('1')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 20:00:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 20:22:12 --> ErrorException: Undefined array key "tahun_h"
+[Method: GET, Route: PesertaQurban/KelompokQurban/1]
+in APPPATH\Views\qurban\v_kelompok_qurban.php on line 71.
+ 1 APPPATH\Views\qurban\v_kelompok_qurban.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tahun_h"', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\qurban\\v_kelompok_qurban.php', 71)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\qurban\\v_kelompok_qurban.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('qurban/v_kelompok_qurban', [], true)
+ 5 APPPATH\Views\v_template_admin.php(269): view('qurban/v_kelompok_qurban')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\v_template_admin.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 9 APPPATH\Controllers\PesertaQurban.php(43): view('v_template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('1')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 20:24:14 --> ErrorException: Undefined array key "tahun_m"
+[Method: GET, Route: PesertaQurban/KelompokQurban/1]
+in APPPATH\Views\qurban\v_kelompok_qurban.php on line 75.
+ 1 APPPATH\Views\qurban\v_kelompok_qurban.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tahun_m"', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\qurban\\v_kelompok_qurban.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\qurban\\v_kelompok_qurban.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('qurban/v_kelompok_qurban', [], true)
+ 5 APPPATH\Views\v_template_admin.php(269): view('qurban/v_kelompok_qurban')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\v_template_admin.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 9 APPPATH\Controllers\PesertaQurban.php(43): view('v_template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('1')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 20:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 20:55:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 21:01:05 --> ArgumentCountError: Too few arguments to function App\Controllers\PesertaQurban::DeleteKelompok(), 1 passed in C:\laragon\www\sistem-informasi-masjid\system\CodeIgniter.php on line 933 and exactly 2 expected
+[Method: POST, Route: PesertaQurban/DeleteKelompok/13]
+in APPPATH\Controllers\PesertaQurban.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->DeleteKelompok('13')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 21:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 21:07:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 21:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 21:11:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 23:34:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 23:34:35 --> ErrorException: Undefined variable $data
+[Method: POST, Route: PesertaQurban/DeleteKelompok/23]
+in APPPATH\Models\ModelPesertaQurban.php on line 30.
+ 1 APPPATH\Models\ModelPesertaQurban.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Models\\ModelPesertaQurban.php', 30)
+ 2 APPPATH\Controllers\PesertaQurban.php(48): App\Models\ModelPesertaQurban->DeleteKelompok('23')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->DeleteKelompok('23')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 23:35:11 --> ErrorException: Undefined variable $data
+[Method: POST, Route: PesertaQurban/DeleteKelompok/23]
+in APPPATH\Models\ModelPesertaQurban.php on line 30.
+ 1 APPPATH\Models\ModelPesertaQurban.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Models\\ModelPesertaQurban.php', 30)
+ 2 APPPATH\Controllers\PesertaQurban.php(48): App\Models\ModelPesertaQurban->DeleteKelompok('23')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->DeleteKelompok('23')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 23:35:52 --> ErrorException: Undefined variable $id
+[Method: POST, Route: PesertaQurban/DeleteKelompok/23]
+in APPPATH\Models\ModelPesertaQurban.php on line 30.
+ 1 APPPATH\Models\ModelPesertaQurban.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Models\\ModelPesertaQurban.php', 30)
+ 2 APPPATH\Controllers\PesertaQurban.php(48): App\Models\ModelPesertaQurban->DeleteKelompok('23')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->DeleteKelompok('23')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 23:36:17 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\ModelPesertaQurban::DeleteKelompok
+[Method: POST, Route: PesertaQurban/DeleteKelompok/23]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\PesertaQurban.php(48): CodeIgniter\Model->__call('DeleteKelompok', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->DeleteKelompok('23')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 23:36:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-19 23:36:45 --> ErrorException: Undefined variable $id_tahun
+[Method: POST, Route: PesertaQurban/DeleteKelompok/23]
+in APPPATH\Controllers\PesertaQurban.php on line 50.
+ 1 APPPATH\Controllers\PesertaQurban.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_tahun', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Controllers\\PesertaQurban.php', 50)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->DeleteKelompok('23')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 23:45:11 --> Error: Call to a member function DetailKelompok() on null
+[Method: POST, Route: PesertaQurban/DeleteKelompok/23]
+in APPPATH\Models\ModelPesertaQurban.php on line 30.
+ 1 APPPATH\Controllers\PesertaQurban.php(48): App\Models\ModelPesertaQurban->DeleteKelompok('23')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->DeleteKelompok('23')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 23:46:07 --> Error: Call to a member function DetailKelompok() on null
+[Method: POST, Route: PesertaQurban/DeleteKelompok/23]
+in APPPATH\Models\ModelPesertaQurban.php on line 30.
+ 1 APPPATH\Controllers\PesertaQurban.php(48): App\Models\ModelPesertaQurban->DeleteKelompok('23')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->DeleteKelompok('23')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 23:46:13 --> Error: Call to a member function DetailKelompok() on null
+[Method: POST, Route: PesertaQurban/DeleteKelompok/23]
+in APPPATH\Models\ModelPesertaQurban.php on line 30.
+ 1 APPPATH\Controllers\PesertaQurban.php(48): App\Models\ModelPesertaQurban->DeleteKelompok('23')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->DeleteKelompok('23')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 23:48:19 --> Error: Call to a member function DetailKelompok() on null
+[Method: POST, Route: PesertaQurban/DeleteKelompok/23]
+in APPPATH\Models\ModelPesertaQurban.php on line 31.
+ 1 APPPATH\Controllers\PesertaQurban.php(52): App\Models\ModelPesertaQurban->DeleteKelompok('23')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->DeleteKelompok('23')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 23:49:25 --> Error: Call to a member function DetailKelompok() on null
+[Method: POST, Route: PesertaQurban/DeleteKelompok/23]
+in APPPATH\Models\ModelPesertaQurban.php on line 31.
+ 1 APPPATH\Controllers\PesertaQurban.php(52): App\Models\ModelPesertaQurban->DeleteKelompok('23')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->DeleteKelompok('23')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 23:49:50 --> Error: Call to a member function DeleteKelompok() on null
+[Method: POST, Route: PesertaQurban/DeleteKelompok/23]
+in APPPATH\Models\ModelPesertaQurban.php on line 31.
+ 1 APPPATH\Controllers\PesertaQurban.php(52): App\Models\ModelPesertaQurban->DeleteKelompok('23')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->DeleteKelompok('23')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-19 23:50:05 --> Error: Call to a member function DeleteKelompok() on null
+[Method: POST, Route: PesertaQurban/DeleteKelompok/23]
+in APPPATH\Models\ModelPesertaQurban.php on line 31.
+ 1 APPPATH\Controllers\PesertaQurban.php(52): App\Models\ModelPesertaQurban->DeleteKelompok('23')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->DeleteKelompok('23')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-19 23:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 23:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 23:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 23:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 23:52:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 23:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 23:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 23:59:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-19 23:59:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -16,5 +16,27 @@ class ModelKelompokQurban extends Model
         return $this->where('id_tahun', $id_tahun)->findAll();
     }
 
-    // Tambahkan fungsi lain jika perlu, seperti insert, update, delete custom
+    public function DetailKelompok($id_kelompok)
+    {
+    return $this->db->table('tbl_kelompok')
+        ->where('id_kelompok', $id_kelompok)
+        ->get()->getRowArray();
+    }
+
+    public function DeleteKelompok($id_kelompok)
+    {
+    return $this->db->table('tbl_kelompok')
+        ->where('id_kelompok', $id_kelompok)
+        ->delete();
+    }
+
+    public function insertKelompok($data)
+    {
+    return $this->db->table('tbl_kelompok')->insert($data);
+    }
+
 }
+
+
+    // Tambahkan fungsi lain jika perlu, seperti insert, update, delete custom
+
