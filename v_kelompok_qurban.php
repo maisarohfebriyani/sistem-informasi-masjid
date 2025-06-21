@@ -35,26 +35,26 @@
                       ->where('id_kelompok', $value['id_kelompok'])
                       ->get()->getResultArray();
                   $no = 1;
-
-                   $biaya = $db->tabel('tbl_anggota_kelompok')
-                      ->where('id_kelompok', $value['id_kelompok'])
+                     
+                  foreach ($anggota as $key => $anggota) {
+                    $biaya = $db->tabel('tbl_anggota_kelompok')
+                    ->where('id_kelompok', $anggota['id_kelompok'])
+                      ->select('tbl_kelompok, id_kelompok')
                       ->groupBy('tbl_anggota_kelompok, id_kelompok')
                       ->selectSum('tbl_anggota_kelompok, biaya')
-                      ->get()->getResultArray();
-                  foreach ($anggota as $key => $anggota) {
+                      ->get()->getRowArray();
 
                   ?>
                   <tr>
                     <td><?= $no++ ?></td>
                     <td><?= $anggota['nama_peserta'] ?></td>
-                    <td>Rp. <?php  //<?= number_format($anggota['biaya'], 0) 
-                             ?></td>
+                    <td>Rp. <?= number_format($anggota['biaya'], 0) ?></td>
                   </tr>
                   <?php } ?>
-                  <tr>
+                  <tr class='text-sucess'>
                     <td></td>
                     <td><b>Total Biaya : </b></td>
-                    <td>Rp <?= number_format(array_sum($total)), 0 ?></td>
+                    <td><b>Rp <?= $anggota == null ? '0' : number_format($biaya['biaya']), 0 ?></b></td>
                   </tr>
                 </table>
               </div>
