@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 06, 2025 at 06:16 AM
--- Server version: 8.0.30
--- PHP Version: 8.1.10
+-- Waktu pembuatan: 29 Jun 2025 pada 16.56
+-- Versi server: 8.0.30
+-- Versi PHP: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_agenda`
+-- Struktur dari tabel `tbl_agenda`
 --
 
 CREATE TABLE `tbl_agenda` (
@@ -35,19 +35,41 @@ CREATE TABLE `tbl_agenda` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `tbl_agenda`
+-- Dumping data untuk tabel `tbl_agenda`
 --
 
 INSERT INTO `tbl_agenda` (`id_agenda`, `nama_kegiatan`, `tanggal`, `jam`) VALUES
-(1, 'Kajian Bersama', '2025-04-15', '09:30:26'),
+(1, 'Kajian Bersama ust nisa', '2025-04-16', '10:30:26'),
 (2, 'Kajian Rutin (Seninan)', '2025-04-21', '19:30:41'),
-(8, 'khataman tuti ', '2025-04-24', '00:00'),
 (10, 'kajian ustazah lia', '2025-04-28', '12:00');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_donasi`
+-- Struktur dari tabel `tbl_anggota_kelompok`
+--
+
+CREATE TABLE `tbl_anggota_kelompok` (
+  `id_anggota` int NOT NULL,
+  `id_kelompok` int DEFAULT NULL,
+  `nama_peserta` varchar(100) DEFAULT NULL,
+  `biaya` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data untuk tabel `tbl_anggota_kelompok`
+--
+
+INSERT INTO `tbl_anggota_kelompok` (`id_anggota`, `id_kelompok`, `nama_peserta`, `biaya`) VALUES
+(21, 3, 'febri', 200000),
+(22, 6, 'sisi', 200000),
+(23, 8, 'lia', 1000000),
+(24, 4, 'tuti', 3000000);
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tbl_donasi`
 --
 
 CREATE TABLE `tbl_donasi` (
@@ -64,7 +86,7 @@ CREATE TABLE `tbl_donasi` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_kas_masjid`
+-- Struktur dari tabel `tbl_kas_masjid`
 --
 
 CREATE TABLE `tbl_kas_masjid` (
@@ -77,18 +99,20 @@ CREATE TABLE `tbl_kas_masjid` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `tbl_kas_masjid`
+-- Dumping data untuk tabel `tbl_kas_masjid`
 --
 
 INSERT INTO `tbl_kas_masjid` (`id_kas`, `tanggal`, `ket`, `kas_masuk`, `kas_keluar`, `status`) VALUES
 (1, '2025-05-06', 'Saldo Awal', 10000000, 0, 'Masuk'),
 (2, '2025-05-06', 'Pembayaran PDAM', 0, 150000, 'Keluar'),
-(3, '2025-05-06', 'Pembayaran Tagihan Listrik Bulan Agustus 2025', 0, 250000, 'Keluar');
+(3, '2025-05-06', 'Pembayaran Tagihan Listrik Bulan Agustus 2025', 0, 250000, 'Keluar'),
+(4, '2025-06-29', 'donasi', 3000000, 0, 'Masuk'),
+(5, '2025-06-29', 'donasi masjid', 300000, 0, 'Masuk');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_kas_sosial`
+-- Struktur dari tabel `tbl_kas_sosial`
 --
 
 CREATE TABLE `tbl_kas_sosial` (
@@ -100,10 +124,62 @@ CREATE TABLE `tbl_kas_sosial` (
   `status` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+--
+-- Dumping data untuk tabel `tbl_kas_sosial`
+--
+
+INSERT INTO `tbl_kas_sosial` (`id_kas_sosial`, `tanggal`, `ket`, `kas_masuk`, `kas_keluar`, `status`) VALUES
+(1, '2025-06-28', 'donasi', 1000, 0, 'Masuk'),
+(2, '2025-06-30', 'Donasi', 80000000, 0, 'Masuk');
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_setting`
+-- Struktur dari tabel `tbl_kelompok`
+--
+
+CREATE TABLE `tbl_kelompok` (
+  `id_kelompok` int NOT NULL,
+  `id_tahun` int NOT NULL,
+  `nama_kelompok` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data untuk tabel `tbl_kelompok`
+--
+
+INSERT INTO `tbl_kelompok` (`id_kelompok`, `id_tahun`, `nama_kelompok`) VALUES
+(1, 1, 'kelompok 1'),
+(2, 1, 'kelompok 2'),
+(3, 6, 'kelompok 2'),
+(4, 6, 'kelompok 3'),
+(6, 7, 'kelompok 1'),
+(8, 7, 'Kambing 1');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tbl_rekening`
+--
+
+CREATE TABLE `tbl_rekening` (
+  `id_rekening` int NOT NULL,
+  `nama_bank` varchar(50) DEFAULT NULL,
+  `no_rekening` varchar(25) DEFAULT NULL,
+  `atas_nama` varchar(150) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data untuk tabel `tbl_rekening`
+--
+
+INSERT INTO `tbl_rekening` (`id_rekening`, `nama_bank`, `no_rekening`, `atas_nama`) VALUES
+(1, 'Bank BRI', '8573-2327-8593', 'Masjid Nurul Iman');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tbl_setting`
 --
 
 CREATE TABLE `tbl_setting` (
@@ -115,7 +191,7 @@ CREATE TABLE `tbl_setting` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `tbl_setting`
+-- Dumping data untuk tabel `tbl_setting`
 --
 
 INSERT INTO `tbl_setting` (`id`, `nama_masjid`, `id_kota`, `nama_kota`, `alamat`) VALUES
@@ -124,7 +200,27 @@ INSERT INTO `tbl_setting` (`id`, `nama_masjid`, `id_kota`, `nama_kota`, `alamat`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_user`
+-- Struktur dari tabel `tbl_tahun`
+--
+
+CREATE TABLE `tbl_tahun` (
+  `id_tahun` int NOT NULL,
+  `tahun_h` varchar(4) DEFAULT NULL,
+  `tahun_m` varchar(4) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data untuk tabel `tbl_tahun`
+--
+
+INSERT INTO `tbl_tahun` (`id_tahun`, `tahun_h`, `tahun_m`) VALUES
+(6, '2604', '2025'),
+(7, '1444', '2022');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tbl_user`
 --
 
 CREATE TABLE `tbl_user` (
@@ -134,115 +230,139 @@ CREATE TABLE `tbl_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `tbl_user`
+-- Dumping data untuk tabel `tbl_user`
 --
 
 INSERT INTO `tbl_user` (`id_user`, `email`, `password`) VALUES
 (4, 'admin@gmail.com', '$2y$10$deSNcyaNLNNBikh5Pk5Xxu9oXweTLNlY0d8rJy5hb7i8Fcoo/5k9S');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tbl_waktu`
---
-
-CREATE TABLE `tbl_waktu` (
-  `id_waktu` int NOT NULL,
-  `nama_waktu` varchar(100) NOT NULL,
-  `jam` time NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `tbl_agenda`
+-- Indeks untuk tabel `tbl_agenda`
 --
 ALTER TABLE `tbl_agenda`
   ADD PRIMARY KEY (`id_agenda`);
 
 --
--- Indexes for table `tbl_donasi`
+-- Indeks untuk tabel `tbl_anggota_kelompok`
+--
+ALTER TABLE `tbl_anggota_kelompok`
+  ADD PRIMARY KEY (`id_anggota`);
+
+--
+-- Indeks untuk tabel `tbl_donasi`
 --
 ALTER TABLE `tbl_donasi`
   ADD PRIMARY KEY (`id_donasi`);
 
 --
--- Indexes for table `tbl_kas_masjid`
+-- Indeks untuk tabel `tbl_kas_masjid`
 --
 ALTER TABLE `tbl_kas_masjid`
   ADD PRIMARY KEY (`id_kas`);
 
 --
--- Indexes for table `tbl_kas_sosial`
+-- Indeks untuk tabel `tbl_kas_sosial`
 --
 ALTER TABLE `tbl_kas_sosial`
   ADD PRIMARY KEY (`id_kas_sosial`);
 
 --
--- Indexes for table `tbl_setting`
+-- Indeks untuk tabel `tbl_kelompok`
+--
+ALTER TABLE `tbl_kelompok`
+  ADD PRIMARY KEY (`id_kelompok`);
+
+--
+-- Indeks untuk tabel `tbl_rekening`
+--
+ALTER TABLE `tbl_rekening`
+  ADD PRIMARY KEY (`id_rekening`);
+
+--
+-- Indeks untuk tabel `tbl_setting`
 --
 ALTER TABLE `tbl_setting`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `tbl_user`
+-- Indeks untuk tabel `tbl_tahun`
+--
+ALTER TABLE `tbl_tahun`
+  ADD PRIMARY KEY (`id_tahun`);
+
+--
+-- Indeks untuk tabel `tbl_user`
 --
 ALTER TABLE `tbl_user`
   ADD PRIMARY KEY (`id_user`);
 
 --
--- Indexes for table `tbl_waktu`
---
-ALTER TABLE `tbl_waktu`
-  ADD PRIMARY KEY (`id_waktu`);
-
---
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `tbl_agenda`
+-- AUTO_INCREMENT untuk tabel `tbl_agenda`
 --
 ALTER TABLE `tbl_agenda`
-  MODIFY `id_agenda` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_agenda` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT for table `tbl_donasi`
+-- AUTO_INCREMENT untuk tabel `tbl_anggota_kelompok`
+--
+ALTER TABLE `tbl_anggota_kelompok`
+  MODIFY `id_anggota` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+
+--
+-- AUTO_INCREMENT untuk tabel `tbl_donasi`
 --
 ALTER TABLE `tbl_donasi`
   MODIFY `id_donasi` int NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `tbl_kas_masjid`
+-- AUTO_INCREMENT untuk tabel `tbl_kas_masjid`
 --
 ALTER TABLE `tbl_kas_masjid`
-  MODIFY `id_kas` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_kas` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `tbl_kas_sosial`
+-- AUTO_INCREMENT untuk tabel `tbl_kas_sosial`
 --
 ALTER TABLE `tbl_kas_sosial`
-  MODIFY `id_kas_sosial` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id_kas_sosial` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `tbl_setting`
+-- AUTO_INCREMENT untuk tabel `tbl_kelompok`
+--
+ALTER TABLE `tbl_kelompok`
+  MODIFY `id_kelompok` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT untuk tabel `tbl_rekening`
+--
+ALTER TABLE `tbl_rekening`
+  MODIFY `id_rekening` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT untuk tabel `tbl_setting`
 --
 ALTER TABLE `tbl_setting`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `tbl_user`
+-- AUTO_INCREMENT untuk tabel `tbl_tahun`
+--
+ALTER TABLE `tbl_tahun`
+  MODIFY `id_tahun` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT untuk tabel `tbl_user`
 --
 ALTER TABLE `tbl_user`
   MODIFY `id_user` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
---
--- AUTO_INCREMENT for table `tbl_waktu`
---
-ALTER TABLE `tbl_waktu`
-  MODIFY `id_waktu` int NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
