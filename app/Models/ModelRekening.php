@@ -3,10 +3,10 @@
 namespace App\Models;
 use CodeIgniter\Model;
 
-class ModelAgenda extends Model
+class ModelRekening extends Model
 {
-    protected $table      = 'tbl_agenda';
-    protected $primaryKey = 'id_agenda';
+    protected $table      = 'tbl_rekening';
+    protected $primaryKey = 'id_rekening';
     protected $allowedFields = ['nama_kegiatan', 'tanggal', 'jam']; // ditambahkan
 
     public function AllData()

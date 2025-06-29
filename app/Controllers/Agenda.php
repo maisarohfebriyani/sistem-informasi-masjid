@@ -17,8 +17,8 @@ class Agenda extends BaseController
         $data = [
             'judul'     => 'Agenda',
             'subjudul'  => '',
-            'menu'      => 'agenda',  // Set menu untuk agenda
-            'submenu'  => '',
+            'menu'      => 'agenda',
+            'submenu'   => '',
             'agenda'    => $this->ModelAgenda->AllData(),
             'page'      => 'v_agenda'
         ];
@@ -35,26 +35,23 @@ class Agenda extends BaseController
         ];
 
         $this->ModelAgenda->InsertData($data);
-        session()->setFlashdata('pesan', 'Data Berhasil Ditambahkan!!');
+        session()->setFlashdata('pesan', 'Data Berhasil Ditambahkan!');
         return redirect()->to(base_url('agenda'));
     }
 
     public function edit($id)
     {
-        // Ambil data agenda berdasarkan ID
         $agenda = $this->ModelAgenda->getDataById($id);
 
-        // Jika data tidak ditemukan, redirect ke halaman agenda
         if (!$agenda) {
             return redirect()->to(base_url('agenda'));
         }
 
-        // Kirim data agenda ke view
         $data = [
             'judul'     => 'Edit Agenda',
             'agenda'    => $agenda,
-            'menu'      => 'agenda',  // Pastikan menu set pada saat edit
-            'page'      => 'v_edit_agenda'  // Ganti dengan nama file view edit
+            'menu'      => 'agenda',
+            'page'      => 'v_edit_agenda'
         ];
 
         return view('v_template_admin', $data);
@@ -69,14 +66,14 @@ class Agenda extends BaseController
         ];
 
         $this->ModelAgenda->updateData($id, $data);
-        session()->setFlashdata('pesan', 'Data Berhasil Diupdate!!');
+        session()->setFlashdata('pesan', 'Data Berhasil Diupdate!');
         return redirect()->to(base_url('agenda'));
     }
 
     public function hapus($id)
     {
         $this->ModelAgenda->deleteData($id);
-        session()->setFlashdata('pesan', 'Data Berhasil Dihapus!!');
+        session()->setFlashdata('pesan', 'Data Berhasil Dihapus!');
         return redirect()->to(base_url('agenda'));
     }
 }

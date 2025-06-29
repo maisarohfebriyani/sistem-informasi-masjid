@@ -1,3 +1,7 @@
+<?php
+$menu = $menu ?? '';
+$submenu = $submenu ?? '';
+?>
 
 <!DOCTYPE html>
 <!--
@@ -171,7 +175,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <li class="nav-item">
                 <a href="#" class="nav-link <?= $menu == '-' ? 'active' : '' ?>">
                   <i class="far fa-circle nav-icon text-success"></i>
-                  <p>Laporan Kas Sosial</p>
+                  <p>Laporan Kas Masjid</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -181,6 +185,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </a>
               </li>
             </ul>
+          </li>
+
+         <li class="nav-item">
+            <a href="<?= base_url('Rekening') ?>" class="nav-link <?= $menu == 'Rekening' ? 'active' : '' ?>">
+              <i class="nav-icon fas fa-money-check"></i>
+              <p>
+                Rekening
+              </p>
+            </a>
           </li>
 
           <li class="nav-item">

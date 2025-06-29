@@ -61,6 +61,12 @@ $routes->get('/peserta-qurban/kelompok/(:num)', 'PesertaQurban::KelompokQurban/$
 $routes->get('PesertaQurban/DeleteKelompok/(:num)/(:num)', 'PesertaQurban::DeleteKelompok/$1/$2');
 $routes->post('PesertaQurban/insertKelompok', 'PesertaQurban::insertKelompok');
 
+$routes->get('rekening', 'Rekening::index');
+$routes->post('rekening/insert-data', 'Rekening::insertData');
+$routes->get('rekening/edit/(:num)', 'Rekening::edit/$1');
+$routes->post('rekening/update/(:num)', 'Rekening::updateData/$1');
+$routes->get('rekening/hapus/(:num)', 'Rekening::hapus/$1');
+
 
 
 

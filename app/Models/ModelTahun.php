@@ -5,38 +5,37 @@ use CodeIgniter\Model;
 
 class ModelTahun extends Model
 {
-    protected $table      = 'tbl_tahun';
-    protected $primaryKey = 'id_tahun';
+    protected $table            = 'tbl_tahun';
+    protected $primaryKey       = 'id_tahun';
+    protected $allowedFields    = ['tahun_h', 'tahun_m'];
 
     public function AllData()
     {
-        return $this->db->table($this->table)->get()->getResultArray();
+        return $this->findAll(); // Gantikan semua db->table
     }
 
     public function DetailData($id_tahun)
     {
-        return $this->db->table($this->table)
-        ->where('id_tahun', $id_tahun)
-        ->get()->getRowArray();
+        return $this->find($id_tahun);
     }
 
     public function InsertData($data)
     {
-        return $this->db->table($this->table)->insert($data);
+        return $this->insert($data);
     }
 
     public function DeleteData($id)
     {
-        return $this->db->table($this->table)->where($this->primaryKey, $id)->Delete();
+        return $this->delete($id);
     }
 
     public function getDataById($id)
     {
-        return $this->db->table($this->table)->where($this->primaryKey, $id)->get()->getRowArray();
+        return $this->find($id);
     }
 
     public function UpdateData($id, $data)
     {
-        return $this->db->table($this->table)->where($this->primaryKey, $id)->Update($data);
+        return $this->update($id, $data);
     }
 }

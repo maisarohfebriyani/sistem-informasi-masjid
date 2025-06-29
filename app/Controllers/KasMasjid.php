@@ -1,11 +1,14 @@
 <?php
 
 namespace App\Controllers;
+
 use App\Controllers\BaseController;
 use App\Models\ModelKasMasjid;
 
 class KasMasjid extends BaseController
 {
+    protected $ModelKasMasjid;
+
     public function __construct()
     {
         $this->ModelKasMasjid = new ModelKasMasjid;
@@ -55,81 +58,79 @@ class KasMasjid extends BaseController
 
     public function InsertKasMasuk()
     {
-    $data = [
-        'tanggal' => $this->request->getPost('tanggal'),
-        'ket' => $this->request->getPost('ket'),
-        'kas_masuk' => $this->request->getPost('kas_masuk'),
-        'kas_keluar' => 0,
-        'status' => 'Masuk',
-    ];
+        $data = [
+            'tanggal'     => $this->request->getPost('tanggal'),
+            'ket'         => $this->request->getPost('ket'),
+            'kas_masuk'   => $this->request->getPost('kas_masuk'),
+            'kas_keluar'  => 0,
+            'status'      => 'Masuk',
+        ];
 
-    $this->ModelKasMasjid->InsertKasMasuk($data);
-    session()->setFlashdata('pesan', 'Data Berhasil Ditambahkan!!');
-    return redirect()->to(base_url('KasMasjid/KasMasuk'));
+        $this->ModelKasMasjid->InsertKasMasuk($data);
+        session()->setFlashdata('pesan', 'Data Berhasil Ditambahkan!!');
+        return redirect()->to(base_url('KasMasjid/KasMasuk'));
     }
 
     public function InsertKasKeluar()
     {
-    $data = [
-        'tanggal' => $this->request->getPost('tanggal'),
-        'ket' => $this->request->getPost('ket'),
-        'kas_masuk' => 0,
-        'kas_keluar' => $this->request->getPost('kas_keluar'),
-        'status' => 'Keluar',
-    ];
+        $data = [
+            'tanggal'     => $this->request->getPost('tanggal'),
+            'ket'         => $this->request->getPost('ket'),
+            'kas_masuk'   => 0,
+            'kas_keluar'  => $this->request->getPost('kas_keluar'),
+            'status'      => 'Keluar',
+        ];
 
-    $this->ModelKasMasjid->InsertKasKeluar($data);
-    session()->setFlashdata('pesan', 'Data Berhasil Ditambahkan!!');
-    return redirect()->to(base_url('KasMasjid/KasKeluar'));
+        $this->ModelKasMasjid->InsertKasKeluar($data);
+        session()->setFlashdata('pesan', 'Data Berhasil Ditambahkan!!');
+        return redirect()->to(base_url('KasMasjid/KasKeluar'));
     }
 
     public function UpdateKasMasuk($id_kas)
     {
-    $data = [
-        'id_kas' => $id_kas,
-        'tanggal' => $this->request->getPost('tanggal'),
-        'ket' => $this->request->getPost('ket'),
-        'kas_masuk' => $this->request->getPost('kas_masuk'), // jangan lupa update ini
-    ];
+        $data = [
+            'id_kas'     => $id_kas,
+            'tanggal'    => $this->request->getPost('tanggal'),
+            'ket'        => $this->request->getPost('ket'),
+            'kas_masuk'  => $this->request->getPost('kas_masuk'),
+            'kas_keluar' => 0,
+            'status'     => 'Masuk',
+        ];
 
-    $this->ModelKasMasjid->UpdateKasMasuk($data);
-    session()->setFlashdata('pesan', 'Data Berhasil Diupdate!!');
-    return redirect()->to(base_url('KasMasjid/KasMasuk'));
+        $this->ModelKasMasjid->UpdateKasMasuk($data);
+        session()->setFlashdata('pesan', 'Data Berhasil Diupdate!!');
+        return redirect()->to(base_url('KasMasjid/KasMasuk'));
     }
 
     public function UpdateKasKeluar($id_kas)
     {
-    $data = [
-        'id_kas' => $id_kas,
-        'tanggal' => $this->request->getPost('tanggal'),
-        'ket' => $this->request->getPost('ket'),
-        'kas_keluar' => $this->request->getPost('kas_keluar'), // jangan lupa update ini
-    ];
+        $data = [
+            'id_kas'      => $id_kas,
+            'tanggal'     => $this->request->getPost('tanggal'),
+            'ket'         => $this->request->getPost('ket'),
+            'kas_masuk'   => 0,
+            'kas_keluar'  => $this->request->getPost('kas_keluar'),
+            'status'      => 'Keluar', // ✅ Tambahkan agar tetap masuk ke daftar kas keluar
+        ];
 
-    $this->ModelKasMasjid->UpdateKasKeluar($data);
-    session()->setFlashdata('pesan', 'Data Berhasil Diupdate!!');
-    return redirect()->to(base_url('KasMasjid/KasKeluar'));
+        $this->ModelKasMasjid->UpdateKasKeluar($data);
+        session()->setFlashdata('pesan', 'Data Berhasil Diupdate!!');
+        return redirect()->to(base_url('KasMasjid/KasKeluar'));
     }
 
     public function DeleteKasMasuk($id_kas)
     {
-    $data = [
-        'id_kas' => $id_kas,
-    ];
-
-    $this->ModelKasMasjid->DeleteKasMasuk($data);
-    session()->setFlashdata('pesan', 'Data Berhasil Didelete!!');
-    return redirect()->to(base_url('KasMasjid/KasMasuk'));
+        $data = ['id_kas' => $id_kas];
+        $this->ModelKasMasjid->DeleteKasMasuk($data);
+        session()->setFlashdata('pesan', 'Data Berhasil Dihapus!!');
+        return redirect()->to(base_url('KasMasjid/KasMasuk'));
     }
 
     public function DeleteKasKeluar($id_kas)
     {
-    $data = [
-        'id_kas' => $id_kas,
-    ];
-
-    $this->ModelKasMasjid->DeleteKasKeluar($data);
-    session()->setFlashdata('pesan', 'Data Berhasil Didelete!!');
-    return redirect()->to(base_url('KasMasjid/KasKeluar'));
+        $data = ['id_kas' => $id_kas];
+        $this->ModelKasMasjid->DeleteKasKeluar($data);
+        session()->setFlashdata('pesan', 'Data Berhasil Dihapus!!');
+        return redirect()->to(base_url('KasMasjid/KasKeluar'));
     }
 }

@@ -30,6 +30,8 @@ class Admin extends Controller
             'page'      => 'v_dashboard',
             'kas'       => $this->ModelKasMasjid->AllData(),
             'kas_s'       => $this->ModelKasSosial->AllData(),
+            'kasmasjid'       => $this->ModelAdmin->AllDataKasMasjid(),
+            'kassosial'       => $this->ModelAdmin->AllDataKasSosial(),
         ];
 
 

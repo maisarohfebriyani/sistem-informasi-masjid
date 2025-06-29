@@ -5,61 +5,52 @@ use CodeIgniter\Model;
 
 class ModelKasSosial extends Model
 {
+    protected $table            = 'tbl_kas_sosial';
+    protected $primaryKey       = 'id_kas_sosial';
+    protected $allowedFields    = ['tanggal', 'ket', 'kas_masuk', 'kas_keluar', 'status'];
+
     public function AllData()
     {
-        return $this->db->table('tbl_kas_sosial')
-        ->get()->getResultArray();
+        return $this->findAll();
     }
 
     public function AllDataKasMasuk()
     {
-        return $this->db->table('tbl_kas_sosial')
-        ->where('status', 'Masuk')
-        ->get()->getResultArray();
+        return $this->where('status', 'Masuk')->findAll();
     }
 
     public function AllDataKasKeluar()
     {
-        return $this->db->table('tbl_kas_sosial')
-        ->where('status', 'Keluar')
-        ->get()->getResultArray();
+        return $this->where('status', 'Keluar')->findAll();
     }
 
     public function InsertKasMasuk($data)
     {
-        $this->db->table('tbl_kas_sosial')->insert($data);
+        return $this->insert($data);
     }
 
     public function InsertKasKeluar($data)
     {
-        $this->db->table('tbl_kas_sosial')->insert($data);
+        return $this->insert($data);
     }
 
     public function UpdateKasMasuk($data)
-{
-    $this->db->table('tbl_kas_sosial')
-             ->where('id_kas_sosial', $data['id_kas_sosial']) // ✅ Pastikan ini cocok dengan nama kolom database
-             ->update($data);
-}
-
-
-    public function UpdateData($data)
     {
-        $this->db->table('tbl_kas_sosial')
-            ->where('id_kas', $data['id_kas'])
-            ->update($data);
+        return $this->update($data['id_kas_sosial'], $data);
+    }
+
+    public function UpdateKasKeluar($data)
+    {
+        return $this->update($data['id_kas_sosial'], $data);
     }
 
     public function DeleteKasMasuk($data)
-{
-    return $this->db->table('tbl_kas_sosial')->delete(['id_kas_sosial' => $data['id_kas_sosial']]);
-}
+    {
+        return $this->delete($data['id_kas_sosial']);
+    }
 
-public function DeleteKasKeluar($data)
-{
-    return $this->db->table('tbl_kas_sosial')->delete(['id_kas_sosial' => $data['id_kas_sosial']]);
-}
-
-
-
+    public function DeleteKasKeluar($data)
+    {
+        return $this->delete($data['id_kas_sosial']);
+    }
 }

@@ -3,65 +3,100 @@
     <div class="card-header bg-success text-white d-flex justify-content-between align-items-center">
       <h5 class="mb-0">
         <i class="fas fa-calendar-alt me-2"></i>
-        Peserta Qurban Tahun <?= esc($tahun['tahun_h']) ?> H / <?= esc($tahun['tahun_m']) ?> M
+        <?php if (isset($tahun)) : ?>
+          Peserta Qurban Tahun <?= esc($tahun['tahun_h']) ?> H / <?= esc($tahun['tahun_m']) ?> M
+        <?php else : ?>
+          Data Peserta Qurban 
+        <?php endif; ?>
       </h5>
     </div>
 
     <div class="card-body bg-white">
+
+      <!-- Flash Messages tanpa judul -->
+      <?php if (session()->getFlashdata('pesan')) : ?>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          <?= session()->getFlashdata('pesan') ?>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      <?php endif; ?>
+
+      <?php if (session()->getFlashdata('error')) : ?>
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          <?= session()->getFlashdata('error') ?>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      <?php endif; ?>
+
+      <?php if (session()->getFlashdata('info')) : ?>
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+          <?= session()->getFlashdata('info') ?>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      <?php endif; ?>
+
       <div class="row">
-        <?php foreach ($kelompok as $value) : ?>
-          <div class="col-md-6 mb-4">
-            <div class="card border-success shadow-sm h-100">
-              <div class="card-header bg-white border-success d-flex justify-content-between align-items-center">
-                <strong class="text-success"><?= esc($value['nama_kelompok']) ?></strong>
-              </div>
+        <?php if (!empty($kelompok)) : ?>
+          <?php foreach ($kelompok as $value) : ?>
+            <div class="col-md-6 mb-4">
+              <div class="card border-success shadow-sm h-100">
+                <div class="card-header bg-white border-success d-flex justify-content-between align-items-center">
+                  <strong class="text-success"><?= esc($value['nama_kelompok']) ?></strong>
+                </div>
 
-              <div class="card-body">
-                <table class="table table-borderless mb-0">
-                  <tr>
-                    <th>No</th>
-                    <th>Nama Peserta</th>
-                    <th>Biaya</th>
-                    <th></th>
-                  </tr>
-                  <?php
-                  $db = \Config\Database::connect();
-                  $anggota = $db->tabel('tbl_peserta_kelompok')
-                      ->where('id_kelompok', $value['id_kelompok'])
-                      ->get()->getResultArray();
-                  $no = 1;
-                     
-                  foreach ($peserta as $key => $peserta) {
-                    $biaya = $db->tabel('tbl_peserta_kelompok')
-                    ->where('id_kelompok', $peserta['id_kelompok'])
-                      ->select('tbl_peserta_kelompok, id_kelompok')
-                      ->groupBy('tbl_peserta_kelompok, id_kelompok')
-                      ->selectSum('tbl_peserta_kelompok, biaya')
-                      ->get()->getRowArray();
+                <div class="card-body">
+                  <table class="table table-borderless mb-0">
+                    <thead>
+                      <tr>
+                        <th>No</th>
+                        <th>Nama Peserta</th>
+                        <th>Biaya</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <?php
+                      $db = \Config\Database::connect();
+                      $anggota = $db->table('tbl_anggota_kelompok')
+                                    ->where('id_kelompok', $value['id_kelompok'])
+                                    ->get()
+                                    ->getResultArray();
 
-                  ?>
-                  <tr>
-                    <td><?= $no++ ?></td>
-                    <td><?= $peserta['nama_peserta'] ?></td>
-                    <td>Rp. <?= number_format($peserta['biaya'], 0) ?></td>
-                  </tr>
-                  <?php } ?>
-                  <tr class='text-sucess'>
-                    <td></td>
-                    <td><b>Total Biaya : </b></td>
-                    <td><b>Rp <?= $peserta == null ? '0' : number_format($biaya['biaya']), 0 ?></b></td>
-                  </tr>
-                </table>
-              </div>
+                      $no = 1;
+                      $total = [];
 
-              <div class="card-footer text-left">
-                <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#modal-delete-kelompok<?= $value['id_kelompok'] ?>">
-                  <i class="fas fa-trash"></i> Delete Kelompok
-                </button>
+                      if (!empty($anggota)) :
+                        foreach ($anggota as $a) :
+                          $total[] = $a['biaya'];
+                      ?>
+                          <tr>
+                            <td><?= $no++ ?></td>
+                            <td><?= esc($a['nama_peserta']) ?></td>
+                            <td>Rp. <?= number_format($a['biaya'], 0, ',', '.') ?></td>
+                          </tr>
+                      <?php endforeach; ?>
+                      <?php else : ?>
+                        <tr>
+                          <td colspan="3" class="text-muted text-center">Belum ada anggota</td>
+                        </tr>
+                      <?php endif; ?>
+
+                      <tr>
+                        <td colspan="2" class="text-end"><strong>Total Biaya:</strong></td>
+                        <td><strong>Rp. <?= number_format(array_sum($total), 0, ',', '.') ?></strong></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
+          <?php endforeach; ?>
+        <?php else : ?>
+          <div class="col-12">
+            <div class="alert alert-info text-center">
+              Belum ada kelompok qurban pada tahun ini.
+            </div>
           </div>
-        <?php endforeach; ?>
+        <?php endif; ?>
       </div>
     </div>
   </div>

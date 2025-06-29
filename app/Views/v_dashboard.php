@@ -57,3 +57,71 @@ $saldokassosial = array_sum($pemasukan_s) - array_sum($pengeluaran_s);
               <a href="<?= base_url('KasSosial')?> " class="small-box-footer">Rincian <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
+
+<div class="col-lg-6 col-12">
+  <div class="card card-primary">
+    <div class="card-header">
+      <h3 class="card-title">Rekap Kas Masjid Bulan <?= date('M Y')?></h3>
+      
+    </div>
+
+    <div class="card-body">
+    <table class="table text-sm">
+        <thead>
+          <tr class="text-center">
+            <th width="50px">No</th>
+            <th width="100px">Tanggal</th>
+            <th>Keterangan</th>
+            <th>Kas Masuk</th>
+            <th>Kas Keluar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php $no = 1; foreach ($kasmasjid as $value) : ?>
+            <tr class="<?= $value['status'] == 'Masuk' ? 'text-success' : 'text-danger' ?>">
+            <td><?= $no++ ?></td>
+              <td><?= $value['tanggal'] ?></td> 
+              <td><?= $value['ket'] ?></td>
+              <td class="text-right">Rp. <?= number_format($value['kas_masuk'], 0) ?></td>
+              <td class="text-right">Rp. <?= number_format($value['kas_keluar'], 0) ?></td>
+            </tr>
+          <?php endforeach; ?>
+        </tbody>
+      </table>
+    </div>
+</div>
+</div>
+
+<div class="col-lg-6 col-12">
+  <div class="card card-success">
+    <div class="card-header">
+      <h3 class="card-title">Rekap Kas Soisal Bulan <?= date('M Y')?></h3>
+      
+    </div>
+
+    <div class="card-body">
+    <table class="table text-sm">
+        <thead>
+          <tr class="text-center">
+            <th width="50px">No</th>
+            <th width="100px">Tanggal</th>
+            <th>Keterangan</th>
+            <th>Kas Masuk</th>
+            <th>Kas Keluar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php $no = 1; foreach ($kassosial as $value) : ?>
+            <tr class="<?= $value['status'] == 'Masuk' ? 'text-success' : 'text-danger' ?>">
+            <td><?= $no++ ?></td>
+              <td><?= $value['tanggal'] ?></td> 
+              <td><?= $value['ket'] ?></td>
+              <td class="text-right">Rp. <?= number_format($value['kas_masuk'], 0) ?></td>
+              <td class="text-right">Rp. <?= number_format($value['kas_keluar'], 0) ?></td>
+            </tr>
+          <?php endforeach; ?>
+        </tbody>
+      </table>
+    </div>
+</div>
+</div>
