@@ -70,5 +70,19 @@ class Admin extends Controller
         session()->setFlashdata('pesan', 'Setting Berhasil Diupdate !!');
         return redirect()->to(base_url('Admin/Setting'));
     }
+
+    public function DonasiMasuk()
+    {
+        $data = [
+            'judul'     => 'Donasi Masuk',
+            'menu'      => 'donasi',
+            'submenu'  => '',
+            'page'      => 'v_donasi_masuk',
+            'donasi' => $this->ModelAdmin->AllDonasi(),
+        ];
+
+
+        return view('v_template_admin', $data);
+    }
 }
 

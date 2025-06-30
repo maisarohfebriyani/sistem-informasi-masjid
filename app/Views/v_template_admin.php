@@ -197,14 +197,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-hand-holding-usd"></i>
-              <p>
-                Donasi Masuk
-                <span class="right badge badge-danger">New</span>
-              </p>
-            </a>
-          </li>
+  <a href="<?= base_url('Admin/DonasiMasuk') ?>" class="nav-link <?= $menu == 'Donasi' ? 'active' : '' ?>">
+    <i class="nav-icon fas fa-hand-holding-usd"></i>
+    <p>
+      Donasi Masuk
+    </p>
+  </a>
+</li>
+
 
           <li class="nav-item <?= $menu == 'qurban' ? 'menu-open' : '' ?>">
             <a href="#" class="nav-link <?= $menu == 'qurban' ? 'active' : '' ?>">

@@ -1,7 +1,7 @@
 <div class="col-md-12">
   <div class="card card-success">
     <div class="card-header">
-      <h3 class="card-title">Data <?= $judul ?></h3>
+      <h3 class="card-title">Data <?= esc($judul) ?></h3>
       <div class="card-tools">
         <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-tambah">
           <i class="fas fa-plus"></i> Tambah
@@ -10,46 +10,73 @@
     </div>
 
     <div class="card-body">
-      <!-- Flashdata Pesan -->
       <?php if (session()->getFlashdata('pesan')) : ?>
-        <div class="alert alert-success"><?= session()->getFlashdata('pesan') ?></div>
+        <div class="alert alert-success"><?= esc(session()->getFlashdata('pesan')) ?></div>
       <?php endif; ?>
+
       <table id="example1" class="table table-bordered table-striped">
         <thead class="thead-dark text-center">
           <tr>
-            <th width="50px">No</th>
+            <th>No</th>
             <th>Rekening Tujuan</th>
-            <th>Rekening pengirim</th>
+            <th>Rekening Pengirim</th>
             <th>Jumlah</th>
+            <th>Jenis Donasi</th>
             <th>Bukti</th>
+            <th>Tanggal</th>
           </tr>
         </thead>
         <tbody>
           <?php $no = 1; foreach ($donasi as $value) : ?>
             <tr class="text-center">
+              <!-- No -->
               <td><?= $no++ ?></td>
 
-               <td>
-            <p>
-                <h5><b><?=$value['nama_bank_tujuan'] ?></b></h5>
-                <?= $value['no_rek_tujuan'] ?><br>
-          </p>
-          </td>
+              <!-- Rekening Tujuan -->
+              <td class="text-left">
+                <strong><?= esc($value['nama_bank_tujuan'] ?? '-') ?></strong><br>
+                <?= esc($value['no_rekening_tujuan'] ?? '-') ?><br>
+                
+              </td>
 
+              <!-- Rekening Pengirim -->
+              <td class="text-left">
+                <strong><?= esc($value['nama_bank_pengirim'] ?? '-') ?></strong><br>
+                <?= esc($value['no_rekening_pengirim'] ?? '-') ?><br>
+                a.n : <?= esc($value['nama_pengirim'] ?? '-') ?>
+               
+              </td>
+
+              <!-- Jumlah -->
               <td>
-            <p>
-                <h5><b><?=$value['nama_bank_pengirim'] ?></b></h5>
-                <?= $value['no_rek_pengirim'] ?><br>
-                a.n : <?= $value['nama_pengirim'] ?><br>
-                Tanggal : <?= $value['tgl'] ?>
-          </p>
-          </td>
-          <td>Rp. <?= number_format($value['jumlah'], 0) ?></td>
-          <?= $value['jenis_donasi'] == 'Masjid' ? '<span class="right badge badge-success">Masjid</span>' : '<span class="right badge badge-primary">Sosial</span>'?>
-          <td>
-            <img src="<?= base_url('bukti/' . $value['bukti']) ?>" width="250px">
-          </td>
-          <td></td>            </tr>
+                Rp. <?= isset($value['jumlah']) ? number_format($value['jumlah'], 0, ',', '.') : '0' ?>
+              </td>
+
+              <!-- Jenis Donasi -->
+              <td>
+                <?php if (!empty($value['jenis_donasi']) && strtolower($value['jenis_donasi']) == 'masjid') : ?>
+                  <span class="badge badge-success">Masjid</span>
+                <?php elseif (!empty($value['jenis_donasi']) && strtolower($value['jenis_donasi']) == 'sosial') : ?>
+                  <span class="badge badge-primary">Sosial</span>
+                <?php else : ?>
+                  <span class="badge badge-secondary">-</span>
+                <?php endif; ?>
+              </td>
+
+              <!-- Bukti Transfer -->
+              <td>
+                <?php if (!empty($value['bukti'])) : ?>
+                  <img src="<?= base_url('bukti/' . $value['bukti']) ?>" width="100px" class="img-thumbnail">
+                <?php else : ?>
+                  <span class="text-danger">Belum ada</span>
+                <?php endif; ?>
+              </td>
+
+              <!-- Tanggal -->
+              <td>
+                <?= !empty($value['tgl']) ? date('d-m-Y', strtotime($value['tgl'])) : '-' ?>
+              </td>
+            </tr>
           <?php endforeach; ?>
         </tbody>
       </table>
