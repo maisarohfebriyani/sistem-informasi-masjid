@@ -17,7 +17,7 @@
               </td>
               <td>
                 <h5><b><?= $value['nama_bank'] ?></b></h5>
-                <h6><?= $value['nomor_rek'] ?><br></h6>
+                <h6><?= $value['no_rekening'] ?><br></h6>
                 <h6>a.n : <?= $value['atas_nama'] ?></h6>
               </td>
             </tr>
@@ -50,7 +50,7 @@
             <select name="id_rekening" class="form-control" required>
               <?php foreach ($rek as $value) { ?>
                 <option value="<?= $value['id_rekening'] ?>">
-                  <?= $value['nama_bank'] ?> | <?= $value['nomor_rek'] ?>
+                  <?= $value['nama_bank'] ?> | <?= $value['no_rekening'] ?>
                 </option>
               <?php } ?>
             </select>
@@ -75,7 +75,7 @@
 
       <div class="form-group">
         <label>No Rekening Pengirim</label>
-        <input type="text" class="form-control" name="no_rek" required>
+        <input type="text" class="form-control" name="no_rekening" required>
       </div>
 
       <div class="form-group">

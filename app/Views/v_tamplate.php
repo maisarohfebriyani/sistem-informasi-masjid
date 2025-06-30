@@ -59,7 +59,7 @@
               <a href="#" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-warning">
+              <a href="<?= base_url('Home/Donasi') ?>" class="btn btn-warning">
                 <i class="fas fa-hand-holding-usd"></i> Donasi
               </a>
             </li>

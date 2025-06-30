@@ -7,7 +7,7 @@ class ModelRekening extends Model
 {
     protected $table      = 'tbl_rekening';
     protected $primaryKey = 'id_rekening';
-    protected $allowedFields = ['nama_kegiatan', 'tanggal', 'jam']; // ditambahkan
+    protected $allowedFields = ['nama_bank', 'no_rek', 'atas_nama'];
 
     public function AllData()
     {
