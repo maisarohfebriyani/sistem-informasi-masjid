@@ -1261,6 +1261,7 @@ abstract class BaseConnection implements ConnectionInterface
 
         return $this->escapeIdentifier($tableName->getActualTableName())
             . (($alias !== '') ? ' ' . $this->escapeIdentifier($alias) : '');
+
     }
 
     /**
