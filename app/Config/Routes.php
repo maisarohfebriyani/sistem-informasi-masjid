@@ -21,8 +21,9 @@ $routes->set404Override();
 $routes->setAutoRoute(true); // Tidak gunakan Auto Routing Improved
 
 // Daftar route manual
-$routes->get('/', 'Home::index');         
-$routes->get('home', 'Home::index');      
+$routes->get('/', 'Home::index'); // Akses dari http://localhost/
+$routes->get('Home', 'Home::index'); // Akses dari http://localhost/Home
+
 $routes->get('Admin', 'Admin::index');   
 $routes->get('Admin/setting', 'Admin::setting'); 
 $routes->post('Admin/updatesetting', 'Admin::UpdateSetting');
@@ -68,6 +69,7 @@ $routes->post('rekening/update/(:num)', 'Rekening::updateData/$1');
 $routes->get('rekening/hapus/(:num)', 'Rekening::hapus/$1');
 
 
+$routes->get('RekapKasMasjid', 'Home::RekapKasMasjid');
 
 
 

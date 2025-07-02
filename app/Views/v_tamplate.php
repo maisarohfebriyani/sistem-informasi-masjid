@@ -41,7 +41,7 @@ if (!$web) {
       <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
         <div class="collapse navbar-collapse order-3" id="navbarCollapse">
           <ul class="navbar-nav">
-            <li class="nav-item"><a href="<?= base_url('Home/Agenda') ?>" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="<?= base_url('Home') ?>" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="<?= base_url('Home/Agenda') ?>" class="nav-link">Agenda</a></li>
             <li class="nav-item dropdown">
               <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" class="nav-link dropdown-toggle">Kas</a>

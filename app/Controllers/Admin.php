@@ -23,51 +23,58 @@ class Admin extends Controller
     public function index()
     {
         $data = [
-            'judul'     => 'Dashboard',
-            'subjudul'  => '',
-            'menu'      => 'dashboard',
-            'submenu'  => '',
-            'page'      => 'v_dashboard',
-            'kas'       => $this->ModelKasMasjid->AllData(),
-            'kas_s'       => $this->ModelKasSosial->AllData(),
-            'kasmasjid'       => $this->ModelAdmin->AllDataKasMasjid(),
-            'kassosial'       => $this->ModelAdmin->AllDataKasSosial(),
+            'judul'      => 'Dashboard',
+            'subjudul'   => '',
+            'menu'       => 'dashboard',
+            'submenu'    => '',
+            'page'       => 'v_dashboard',
+            'kas'        => $this->ModelKasMasjid->AllData(),
+            'kas_s'      => $this->ModelKasSosial->AllData(),
+            'kasmasjid'  => $this->ModelAdmin->AllDataKasMasjid(),
+            'kassosial'  => $this->ModelAdmin->AllDataKasSosial(),
         ];
-
 
         return view('v_template_admin', $data);
     }
 
     public function setting()
     {
-        $url  = 'https://api.myquran.com/v2/sholat/kota/semua';
-        $kota = json_decode(file_get_contents($url),true); // decode agar bisa diakses sebagai array
+        // Ambil daftar kota dari API
+        $url = 'https://api.myquran.com/v2/sholat/kota/semua';
+        $response = @file_get_contents($url);
 
-        // Data yang dikirim ke view
-       $data = [
-            'judul'     => 'Setting',
-            'subjudul'  => '',
-            'menu'      => 'setting',
+        if ($response === false) {
+            $kota = ['data' => []];
+            session()->setFlashdata('error', 'Gagal mengambil daftar kota dari API.');
+        } else {
+            $kota = json_decode($response, true);
+        }
+
+        $data = [
+            'judul'    => 'Setting',
+            'subjudul'=> '',
+            'menu'     => 'setting',
             'submenu'  => '',
-            'page'      => 'v_setting',
-            'setting'   => $this->ModelAdmin->ViewSetting(),
-            'kota'      => $kota,
+            'page'     => 'v_setting',
+            'setting'  => $this->ModelAdmin->ViewSetting(),
+            'kota'     => $kota,
         ];
 
         return view('v_template_admin', $data);
-
     }
 
     public function UpdateSetting()
     {
         $data = [
-            'id' => 1,
-            'nama_masjid' => $this->request->getPost('nama_masjid'),
-            'id_kota' => $this->request->getPost('id_kota'),
-            'alamat' => $this->request->getPost('alamat'),
+            'id'           => 1, // Asumsinya hanya ada 1 data setting
+            'nama_masjid'  => $this->request->getPost('nama_masjid'),
+            'id_kota'      => $this->request->getPost('id_kota'),
+            'alamat'       => $this->request->getPost('alamat'),
         ];
+
         $this->ModelAdmin->UpdateSetting($data);
-        session()->setFlashdata('pesan', 'Setting Berhasil Diupdate !!');
+
+        session()->setFlashdata('pesan', 'Setting Berhasil Diupdate!');
         return redirect()->to(base_url('Admin/Setting'));
     }
 
@@ -76,13 +83,12 @@ class Admin extends Controller
         $data = [
             'judul'     => 'Donasi Masuk',
             'menu'      => 'donasi',
-            'submenu'  => '',
+            'submenu'   => '',
             'page'      => 'v_donasi_masuk',
-            'donasi' => $this->ModelAdmin->AllDonasi(),
+            'donasi'    => $this->ModelAdmin->AllDonasi(),
         ];
-
 
         return view('v_template_admin', $data);
     }
-}
 
+}

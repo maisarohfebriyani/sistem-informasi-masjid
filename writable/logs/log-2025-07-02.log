@@ -304,3 +304,367 @@ in SYSTEMPATH\Database\BaseConnection.php on line 941.
  7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
  8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-02 12:51:20 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: POST, Route: admin/updateSetting]
+in SYSTEMPATH\Database\BaseConnection.php on line 941.
+ 1 SYSTEMPATH\Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Admin.php(69): CodeIgniter\Model->__call('UpdateSetting', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->UpdateSetting()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-02 12:51:29 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: POST, Route: admin/updateSetting]
+in SYSTEMPATH\Database\BaseConnection.php on line 941.
+ 1 SYSTEMPATH\Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Admin.php(69): CodeIgniter\Model->__call('UpdateSetting', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->UpdateSetting()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-02 13:00:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 13:01:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-02 13:02:38 --> ErrorException: file_get_contents(): php_network_getaddresses: getaddrinfo for api.myquran.com failed: No such host is known. 
+[Method: GET, Route: Admin/Setting]
+in APPPATH\Controllers\Admin.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): php_network_getaddresses: getaddrinfo for api.myquran.com failed: No such host is known. ', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Controllers\\Admin.php', 44)
+ 2 APPPATH\Controllers\Admin.php(44): file_get_contents('https://api.myquran.com/v2/sholat/kota/semua')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->setting()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-02 13:02:43 --> ErrorException: file_get_contents(): SSL: Handshake timed out
+[Method: GET, Route: Admin/Setting]
+in APPPATH\Controllers\Admin.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(): SSL: Handshake timed out', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Controllers\\Admin.php', 44)
+ 2 APPPATH\Controllers\Admin.php(44): file_get_contents('https://api.myquran.com/v2/sholat/kota/semua')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->setting()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-02 13:03:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 13:03:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-02 13:03:55 --> ErrorException: file_get_contents(https://api.myquran.com/v2/sholat/kota/semua): Failed to open stream: HTTP request failed!
+[Method: GET, Route: admin/setting]
+in APPPATH\Controllers\Admin.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://api.myquran.com/v2/sholat/kota/semua): Failed to open stream: HTTP request failed!', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Controllers\\Admin.php', 44)
+ 2 APPPATH\Controllers\Admin.php(44): file_get_contents('https://api.myquran.com/v2/sholat/kota/semua')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->setting()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-02 13:05:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-02 13:05:51 --> ErrorException: file_get_contents(https://api.myquran.com/v2/sholat/jadwal//2025/07/02): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 35.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://api.myquran.com/v2/sholat/jadwal//2025/07/02): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Controllers\\Home.php', 35)
+ 2 APPPATH\Controllers\Home.php(35): file_get_contents('https://api.myquran.com/v2/sholat/jadwal//2025/07/02')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-02 13:05:52 --> ErrorException: file_get_contents(https://api.myquran.com/v2/sholat/jadwal//2025/07/02): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 35.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://api.myquran.com/v2/sholat/jadwal//2025/07/02): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Controllers\\Home.php', 35)
+ 2 APPPATH\Controllers\Home.php(35): file_get_contents('https://api.myquran.com/v2/sholat/jadwal//2025/07/02')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-02 13:06:45 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: POST, Route: admin/updateSetting]
+in SYSTEMPATH\Database\BaseConnection.php on line 941.
+ 1 SYSTEMPATH\Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Admin.php(69): CodeIgniter\Model->__call('UpdateSetting', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->UpdateSetting()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-02 13:07:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-02 13:07:06 --> ErrorException: file_get_contents(https://api.myquran.com/v2/sholat/jadwal//2025/07/02): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 35.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://api.myquran.com/v2/sholat/jadwal//2025/07/02): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Controllers\\Home.php', 35)
+ 2 APPPATH\Controllers\Home.php(35): file_get_contents('https://api.myquran.com/v2/sholat/jadwal//2025/07/02')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-02 13:07:07 --> ErrorException: file_get_contents(https://api.myquran.com/v2/sholat/jadwal//2025/07/02): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 35.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://api.myquran.com/v2/sholat/jadwal//2025/07/02): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Controllers\\Home.php', 35)
+ 2 APPPATH\Controllers\Home.php(35): file_get_contents('https://api.myquran.com/v2/sholat/jadwal//2025/07/02')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-02 13:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 13:11:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 13:11:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 13:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 13:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 13:11:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 13:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-02 13:12:41 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: POST, Route: admin/updateSetting]
+in SYSTEMPATH\Database\BaseConnection.php on line 941.
+ 1 SYSTEMPATH\Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Admin.php(69): CodeIgniter\Model->__call('UpdateSetting', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->UpdateSetting()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-02 13:13:27 --> ErrorException: file_get_contents(https://api.myquran.com/v2/sholat/jadwal//2025/07/02): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 35.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://api.myquran.com/v2/sholat/jadwal//2025/07/02): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Controllers\\Home.php', 35)
+ 2 APPPATH\Controllers\Home.php(35): file_get_contents('https://api.myquran.com/v2/sholat/jadwal//2025/07/02')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-02 13:13:28 --> ErrorException: file_get_contents(https://api.myquran.com/v2/sholat/jadwal//2025/07/02): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 35.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://api.myquran.com/v2/sholat/jadwal//2025/07/02): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Controllers\\Home.php', 35)
+ 2 APPPATH\Controllers\Home.php(35): file_get_contents('https://api.myquran.com/v2/sholat/jadwal//2025/07/02')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-02 13:13:49 --> ErrorException: file_get_contents(https://api.myquran.com/v2/sholat/jadwal//2025/07/02): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 35.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://api.myquran.com/v2/sholat/jadwal//2025/07/02): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Controllers\\Home.php', 35)
+ 2 APPPATH\Controllers\Home.php(35): file_get_contents('https://api.myquran.com/v2/sholat/jadwal//2025/07/02')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-02 13:15:35 --> ErrorException: file_get_contents(https://api.myquran.com/v2/sholat/jadwal//2025/07/02): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 35.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://api.myquran.com/v2/sholat/jadwal//2025/07/02): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Controllers\\Home.php', 35)
+ 2 APPPATH\Controllers\Home.php(35): file_get_contents('https://api.myquran.com/v2/sholat/jadwal//2025/07/02')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-02 13:15:36 --> ErrorException: file_get_contents(https://api.myquran.com/v2/sholat/jadwal//2025/07/02): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 35.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://api.myquran.com/v2/sholat/jadwal//2025/07/02): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Controllers\\Home.php', 35)
+ 2 APPPATH\Controllers\Home.php(35): file_get_contents('https://api.myquran.com/v2/sholat/jadwal//2025/07/02')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-02 13:16:55 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: POST, Route: admin/updateSetting]
+in SYSTEMPATH\Database\BaseConnection.php on line 941.
+ 1 SYSTEMPATH\Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Admin.php(69): CodeIgniter\Model->__call('UpdateSetting', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->UpdateSetting()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-02 13:18:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 13:18:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-02 13:18:47 --> ErrorException: file_get_contents(https://api.myquran.com/v2/sholat/jadwal//2025/07/02): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 35.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://api.myquran.com/v2/sholat/jadwal//2025/07/02): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Controllers\\Home.php', 35)
+ 2 APPPATH\Controllers\Home.php(35): file_get_contents('https://api.myquran.com/v2/sholat/jadwal//2025/07/02')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-02 13:18:48 --> ErrorException: file_get_contents(https://api.myquran.com/v2/sholat/jadwal//2025/07/02): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 35.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://api.myquran.com/v2/sholat/jadwal//2025/07/02): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Controllers\\Home.php', 35)
+ 2 APPPATH\Controllers\Home.php(35): file_get_contents('https://api.myquran.com/v2/sholat/jadwal//2025/07/02')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-02 13:21:48 --> ErrorException: file_get_contents(https://api.myquran.com/v2/sholat/jadwal//2025/07/02): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 35.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://api.myquran.com/v2/sholat/jadwal//2025/07/02): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Controllers\\Home.php', 35)
+ 2 APPPATH\Controllers\Home.php(35): file_get_contents('https://api.myquran.com/v2/sholat/jadwal//2025/07/02')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-02 13:22:02 --> ErrorException: file_get_contents(https://api.myquran.com/v2/sholat/jadwal//2025/07/02): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 35.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://api.myquran.com/v2/sholat/jadwal//2025/07/02): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Controllers\\Home.php', 35)
+ 2 APPPATH\Controllers\Home.php(35): file_get_contents('https://api.myquran.com/v2/sholat/jadwal//2025/07/02')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-02 13:42:46 --> ErrorException: Undefined array key "lokasi"
+[Method: GET, Route: /]
+in APPPATH\Views\v_home.php on line 45.
+ 1 APPPATH\Views\v_home.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "lokasi"', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\v_home.php', 45)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\v_home.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('v_home', [], true)
+ 5 APPPATH\Views\v_tamplate.php(101): view('v_home', [...])
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\v_tamplate.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('v_tamplate', [], true)
+ 9 APPPATH\Controllers\Home.php(50): view('v_tamplate', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-02 13:46:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 13:46:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 13:55:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 13:56:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-02 14:00:12 --> CodeIgniter\View\Exceptions\ViewException: File tidak valid: v_rekap_kas_masjid.php
+[Method: GET, Route: Home/RekapKasMasjid]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_rekap_kas_masjid.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('v_rekap_kas_masjid', [], true)
+ 3 APPPATH\Views\v_template_admin.php(288): view('v_rekap_kas_masjid')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\Home.php(129): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->RekapKasMasjid()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-02 14:02:05 --> CodeIgniter\View\Exceptions\ViewException: File tidak valid: v_rekap_kas_masjid.php
+[Method: GET, Route: Home/RekapKasMasjid]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_rekap_kas_masjid.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('v_rekap_kas_masjid', [], true)
+ 3 APPPATH\Views\v_template_admin.php(288): view('v_rekap_kas_masjid')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\Home.php(129): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->RekapKasMasjid()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-02 14:07:27 --> CodeIgniter\View\Exceptions\ViewException: File tidak valid: v_template.php
+[Method: GET, Route: Home/RekapKasMasjid]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_template.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('v_template', [], true)
+ 3 APPPATH\Controllers\Home.php(129): view('v_template', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->RekapKasMasjid()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-02 14:08:37 --> CodeIgniter\View\Exceptions\ViewException: File tidak valid: front-end/v_template.php
+[Method: GET, Route: Home/RekapKasMasjid]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('front-end/v_template.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('front-end/v_template', [], true)
+ 3 APPPATH\Controllers\Home.php(129): view('front-end/v_template', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->RekapKasMasjid()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-02 14:13:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 14:14:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 14:14:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 14:14:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 14:15:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 14:15:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 14:16:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 14:18:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 14:22:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
