@@ -53,4 +53,12 @@ class ModelKasSosial extends Model
     {
         return $this->delete($data['id_kas_sosial']);
     }
+
+    public function AllDataBulanan($bulan, $tahun)
+    {
+        return $this->db->table('tbl_kas_sosial')
+                        ->where('month(tanggal)', $bulan)
+                        ->where('year(tanggal)', $tahun)
+                        ->get()->getResultArray();
+    }
 }

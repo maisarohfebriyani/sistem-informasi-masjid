@@ -70,4 +70,12 @@ class ModelKasMasjid extends Model
         return $this->db->table($this->table)
                         ->delete(['id_kas' => $data['id_kas']]);
     }
+
+        public function AllDataBulanan($bulan, $tahun)
+    {
+        return $this->db->table('tbl_kas_masjid')
+                        ->where('month(tanggal)', $bulan)
+                        ->where('year(tanggal)', $tahun)
+                        ->get()->getResultArray();
+    }
 }

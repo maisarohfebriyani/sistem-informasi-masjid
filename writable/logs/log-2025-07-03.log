@@ -1,0 +1,318 @@
+DEBUG - 2025-07-03 15:15:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 15:15:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 15:15:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 15:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 15:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 15:16:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 15:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 15:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 15:18:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-03 16:07:15 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\ModelKasMasjid::FilterByBulanTahun
+[Method: POST, Route: KasMasjid/ViewLaporanKasMasjid]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\KasMasjid.php(157): CodeIgniter\Model->__call('FilterByBulanTahun', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasMasjid->ViewLaporanKasMasjid()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasMasjid))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-03 16:23:38 --> ErrorException: Undefined variable $kas
+[Method: POST, Route: KasMasjid/ViewLaporan]
+in APPPATH\Views\kas-masjid\v_data_laporan.php on line 13.
+ 1 APPPATH\Views\kas-masjid\v_data_laporan.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kas', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\kas-masjid\\v_data_laporan.php', 13)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\kas-masjid\\v_data_laporan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('kas-masjid/v_data_laporan', [], true)
+ 5 APPPATH\Controllers\KasMasjid.php(171): view('kas-masjid/v_data_laporan')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasMasjid->ViewLaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasMasjid))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-03 16:36:36 --> CodeIgniter\View\Exceptions\ViewException: File tidak valid: kas-masjid/v_tampil_laporan_kas_masjid.php
+[Method: POST, Route: KasMasjid/ViewLaporan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kas-masjid/v_tampil_laporan_kas_masjid.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('kas-masjid/v_tampil_laporan_kas_masjid', [], true)
+ 3 APPPATH\Controllers\KasMasjid.php(164): view('kas-masjid/v_tampil_laporan_kas_masjid', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasMasjid->ViewLaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasMasjid))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-03 16:36:36 --> CodeIgniter\View\Exceptions\ViewException: File tidak valid: kas-masjid/v_tampil_laporan_kas_masjid.php
+[Method: POST, Route: KasMasjid/ViewLaporan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kas-masjid/v_tampil_laporan_kas_masjid.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('kas-masjid/v_tampil_laporan_kas_masjid', [], true)
+ 3 APPPATH\Controllers\KasMasjid.php(164): view('kas-masjid/v_tampil_laporan_kas_masjid', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasMasjid->ViewLaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasMasjid))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-03 16:38:04 --> CodeIgniter\View\Exceptions\ViewException: File tidak valid: kas-masjid/v_tampil_laporan_kas_masjid.php
+[Method: POST, Route: KasMasjid/ViewLaporan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kas-masjid/v_tampil_laporan_kas_masjid.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('kas-masjid/v_tampil_laporan_kas_masjid', [], true)
+ 3 APPPATH\Controllers\KasMasjid.php(164): view('kas-masjid/v_tampil_laporan_kas_masjid', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasMasjid->ViewLaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasMasjid))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-03 16:38:04 --> CodeIgniter\View\Exceptions\ViewException: File tidak valid: kas-masjid/v_tampil_laporan_kas_masjid.php
+[Method: POST, Route: KasMasjid/ViewLaporan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kas-masjid/v_tampil_laporan_kas_masjid.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('kas-masjid/v_tampil_laporan_kas_masjid', [], true)
+ 3 APPPATH\Controllers\KasMasjid.php(164): view('kas-masjid/v_tampil_laporan_kas_masjid', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasMasjid->ViewLaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasMasjid))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-03 16:38:04 --> CodeIgniter\View\Exceptions\ViewException: File tidak valid: kas-masjid/v_tampil_laporan_kas_masjid.php
+[Method: POST, Route: KasMasjid/ViewLaporan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kas-masjid/v_tampil_laporan_kas_masjid.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('kas-masjid/v_tampil_laporan_kas_masjid', [], true)
+ 3 APPPATH\Controllers\KasMasjid.php(164): view('kas-masjid/v_tampil_laporan_kas_masjid', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasMasjid->ViewLaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasMasjid))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-03 16:38:04 --> CodeIgniter\View\Exceptions\ViewException: File tidak valid: kas-masjid/v_tampil_laporan_kas_masjid.php
+[Method: POST, Route: KasMasjid/ViewLaporan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kas-masjid/v_tampil_laporan_kas_masjid.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('kas-masjid/v_tampil_laporan_kas_masjid', [], true)
+ 3 APPPATH\Controllers\KasMasjid.php(164): view('kas-masjid/v_tampil_laporan_kas_masjid', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasMasjid->ViewLaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasMasjid))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-03 16:38:04 --> CodeIgniter\View\Exceptions\ViewException: File tidak valid: kas-masjid/v_tampil_laporan_kas_masjid.php
+[Method: POST, Route: KasMasjid/ViewLaporan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kas-masjid/v_tampil_laporan_kas_masjid.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('kas-masjid/v_tampil_laporan_kas_masjid', [], true)
+ 3 APPPATH\Controllers\KasMasjid.php(164): view('kas-masjid/v_tampil_laporan_kas_masjid', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasMasjid->ViewLaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasMasjid))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-03 16:38:04 --> CodeIgniter\View\Exceptions\ViewException: File tidak valid: kas-masjid/v_tampil_laporan_kas_masjid.php
+[Method: POST, Route: KasMasjid/ViewLaporan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kas-masjid/v_tampil_laporan_kas_masjid.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('kas-masjid/v_tampil_laporan_kas_masjid', [], true)
+ 3 APPPATH\Controllers\KasMasjid.php(164): view('kas-masjid/v_tampil_laporan_kas_masjid', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasMasjid->ViewLaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasMasjid))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-03 16:38:04 --> CodeIgniter\View\Exceptions\ViewException: File tidak valid: kas-masjid/v_tampil_laporan_kas_masjid.php
+[Method: POST, Route: KasMasjid/ViewLaporan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kas-masjid/v_tampil_laporan_kas_masjid.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('kas-masjid/v_tampil_laporan_kas_masjid', [], true)
+ 3 APPPATH\Controllers\KasMasjid.php(164): view('kas-masjid/v_tampil_laporan_kas_masjid', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasMasjid->ViewLaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasMasjid))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-03 16:38:04 --> CodeIgniter\View\Exceptions\ViewException: File tidak valid: kas-masjid/v_tampil_laporan_kas_masjid.php
+[Method: POST, Route: KasMasjid/ViewLaporan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kas-masjid/v_tampil_laporan_kas_masjid.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('kas-masjid/v_tampil_laporan_kas_masjid', [], true)
+ 3 APPPATH\Controllers\KasMasjid.php(164): view('kas-masjid/v_tampil_laporan_kas_masjid', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasMasjid->ViewLaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasMasjid))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-03 16:38:04 --> CodeIgniter\View\Exceptions\ViewException: File tidak valid: kas-masjid/v_tampil_laporan_kas_masjid.php
+[Method: POST, Route: KasMasjid/ViewLaporan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kas-masjid/v_tampil_laporan_kas_masjid.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('kas-masjid/v_tampil_laporan_kas_masjid', [], true)
+ 3 APPPATH\Controllers\KasMasjid.php(164): view('kas-masjid/v_tampil_laporan_kas_masjid', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasMasjid->ViewLaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasMasjid))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-03 16:38:19 --> CodeIgniter\View\Exceptions\ViewException: File tidak valid: kas-masjid/v_tampil_laporan_kas_masjid.php
+[Method: POST, Route: KasMasjid/ViewLaporan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('kas-masjid/v_tampil_laporan_kas_masjid.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('kas-masjid/v_tampil_laporan_kas_masjid', [], true)
+ 3 APPPATH\Controllers\KasMasjid.php(164): view('kas-masjid/v_tampil_laporan_kas_masjid', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasMasjid->ViewLaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasMasjid))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-03 17:05:32 --> ErrorException: Undefined variable $masjid
+[Method: POST, Route: KasMasjid/ViewLaporan]
+in APPPATH\Views\kas-masjid\v_laporan_kas_masjid.php on line 47.
+ 1 APPPATH\Views\kas-masjid\v_laporan_kas_masjid.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $masjid', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\kas-masjid\\v_laporan_kas_masjid.php', 47)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\kas-masjid\\v_laporan_kas_masjid.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('kas-masjid/v_laporan_kas_masjid', [], true)
+ 5 APPPATH\Controllers\KasMasjid.php(164): view('kas-masjid/v_laporan_kas_masjid', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasMasjid->ViewLaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasMasjid))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-07-03 18:09:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-03 18:09:47 --> ErrorException: Undefined variable $sosial
+[Method: GET, Route: KasSosial/Laporan]
+in APPPATH\Views\kas-sosial\v_laporan_kas_sosial.php on line 53.
+ 1 APPPATH\Views\kas-sosial\v_laporan_kas_sosial.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sosial', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\kas-sosial\\v_laporan_kas_sosial.php', 53)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\kas-sosial\\v_laporan_kas_sosial.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('kas-sosial/v_laporan_kas_sosial', [], true)
+ 5 APPPATH\Views\v_template_admin.php(288): view('kas-sosial/v_laporan_kas_sosial')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\v_template_admin.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 9 APPPATH\Controllers\KasSosial.php(140): view('v_template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasSosial->Laporan()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasSosial))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-03 18:10:40 --> ErrorException: Undefined array key "nama_sosial"
+[Method: GET, Route: KasSosial/Laporan]
+in APPPATH\Views\kas-sosial\v_laporan_kas_sosial.php on line 53.
+ 1 APPPATH\Views\kas-sosial\v_laporan_kas_sosial.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_sosial"', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\kas-sosial\\v_laporan_kas_sosial.php', 53)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\kas-sosial\\v_laporan_kas_sosial.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('kas-sosial/v_laporan_kas_sosial', [], true)
+ 5 APPPATH\Views\v_template_admin.php(288): view('kas-sosial/v_laporan_kas_sosial')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\v_template_admin.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 9 APPPATH\Controllers\KasSosial.php(140): view('v_template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasSosial->Laporan()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasSosial))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-03 18:12:49 --> ErrorException: Undefined array key "nama_sosial"
+[Method: GET, Route: KasSosial/Laporan]
+in APPPATH\Views\kas-sosial\v_laporan_kas_sosial.php on line 53.
+ 1 APPPATH\Views\kas-sosial\v_laporan_kas_sosial.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_sosial"', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\kas-sosial\\v_laporan_kas_sosial.php', 53)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\kas-sosial\\v_laporan_kas_sosial.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('kas-sosial/v_laporan_kas_sosial', [], true)
+ 5 APPPATH\Views\v_template_admin.php(288): view('kas-sosial/v_laporan_kas_sosial')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\v_template_admin.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 9 APPPATH\Controllers\KasSosial.php(140): view('v_template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasSosial->Laporan()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasSosial))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-03 18:13:12 --> ErrorException: Undefined variable $masjid
+[Method: GET, Route: KasSosial/Laporan]
+in APPPATH\Views\kas-sosial\v_laporan_kas_sosial.php on line 54.
+ 1 APPPATH\Views\kas-sosial\v_laporan_kas_sosial.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $masjid', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\kas-sosial\\v_laporan_kas_sosial.php', 54)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\kas-sosial\\v_laporan_kas_sosial.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('kas-sosial/v_laporan_kas_sosial', [], true)
+ 5 APPPATH\Views\v_template_admin.php(288): view('kas-sosial/v_laporan_kas_sosial')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\v_template_admin.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 9 APPPATH\Controllers\KasSosial.php(140): view('v_template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasSosial->Laporan()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasSosial))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-03 18:13:35 --> ErrorException: Undefined variable $masjid
+[Method: GET, Route: KasSosial/Laporan]
+in APPPATH\Views\kas-sosial\v_laporan_kas_sosial.php on line 53.
+ 1 APPPATH\Views\kas-sosial\v_laporan_kas_sosial.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $masjid', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\kas-sosial\\v_laporan_kas_sosial.php', 53)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\kas-sosial\\v_laporan_kas_sosial.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('kas-sosial/v_laporan_kas_sosial', [], true)
+ 5 APPPATH\Views\v_template_admin.php(288): view('kas-sosial/v_laporan_kas_sosial')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\v_template_admin.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 9 APPPATH\Controllers\KasSosial.php(140): view('v_template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasSosial->Laporan()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasSosial))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-03 18:14:06 --> ErrorException: Undefined variable $masjid
+[Method: GET, Route: KasSosial/Laporan]
+in APPPATH\Views\kas-sosial\v_laporan_kas_sosial.php on line 53.
+ 1 APPPATH\Views\kas-sosial\v_laporan_kas_sosial.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $masjid', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\kas-sosial\\v_laporan_kas_sosial.php', 53)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\kas-sosial\\v_laporan_kas_sosial.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('kas-sosial/v_laporan_kas_sosial', [], true)
+ 5 APPPATH\Views\v_template_admin.php(288): view('kas-sosial/v_laporan_kas_sosial')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\v_template_admin.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 9 APPPATH\Controllers\KasSosial.php(140): view('v_template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasSosial->Laporan()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasSosial))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-03 18:20:36 --> ErrorException: Undefined variable $masjid
+[Method: GET, Route: KasSosial/Laporan]
+in APPPATH\Views\kas-sosial\v_laporan_kas_sosial.php on line 53.
+ 1 APPPATH\Views\kas-sosial\v_laporan_kas_sosial.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $masjid', 'C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\kas-sosial\\v_laporan_kas_sosial.php', 53)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\kas-sosial\\v_laporan_kas_sosial.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('kas-sosial/v_laporan_kas_sosial', [], true)
+ 5 APPPATH\Views\v_template_admin.php(288): view('kas-sosial/v_laporan_kas_sosial')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\sistem-informasi-masjid\\app\\Views\\v_template_admin.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 9 APPPATH\Controllers\KasSosial.php(140): view('v_template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasSosial->Laporan()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasSosial))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

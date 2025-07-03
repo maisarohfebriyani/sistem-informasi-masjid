@@ -169,8 +169,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </ul>
           </li>
 
-          <li class="nav-item <?= $menu == '-' ? 'menu-open' : '' ?>">
-            <a href="#" class="nav-link <?= $menu == '-' ? 'active' : '' ?>">
+          <li class="nav-item <?= $menu == 'laporan-kas' ? 'menu-open' : '' ?>">
+            <a href="#" class="nav-link <?= $menu == 'laporan-kas' ? 'active' : '' ?>">
               <i class="nav-icon fas fa-file-invoice-dollar"></i>
               <p>
                 Laporan Kas
@@ -179,13 +179,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </a>
             <ul class="nav nav-treeview">
             <li class="nav-item">
-                <a href="#" class="nav-link <?= $menu == '-' ? 'active' : '' ?>">
+                <a href="<?= base_url('KasMasjid/Laporan') ?>" class="nav-link <?= $submenu == 'laporan-kas-masjid' ? 'active' : '' ?>">
                   <i class="far fa-circle nav-icon text-success"></i>
                   <p>Laporan Kas Masjid</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="<?= base_url('KasSosial/Laporan') ?>" class="nav-link <?= $submenu == 'laporan-kas-sosial' ? 'active' : '' ?>">
                   <i class="far fa-circle nav-icon text-danger"></i>
                   <p>Laporan Kas Sosial</p>
                 </a>
