@@ -51,14 +51,6 @@ if (!$web) {
               </ul>
             </li>
             <li class="nav-item"><a href="<?= base_url('Home/PesertaQurban') ?>" class="nav-link">Peserta Kurban</a></li>
-            <li class="nav-item dropdown">
-              <a id="dropdownSubMenu2" href="#" data-toggle="dropdown" class="nav-link dropdown-toggle">Dropdown</a>
-              <ul class="dropdown-menu border-0 shadow" aria-labelledby="dropdownSubMenu2">
-                <li><a href="#" class="dropdown-item">Some action</a></li>
-                <li><a href="#" class="dropdown-item">Some other action</a></li>
-              </ul>
-            </li>
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
             <li class="nav-item">
               <a href="<?= base_url('Home/Donasi') ?>" class="btn btn-warning">
                 <i class="fas fa-hand-holding-usd"></i> Donasi
