@@ -71,8 +71,10 @@ $routes->get('rekening/hapus/(:num)', 'Rekening::hapus/$1');
 
 $routes->get('RekapKasMasjid', 'Home::RekapKasMasjid');
 
-
-
+$routes->get('user', 'User::index');
+$routes->post('user/simpan', 'User::simpan');
+$routes->post('user/update/(:num)', 'User::update/$1');
+$routes->get('user/hapus/(:num)', 'User::hapus/$1');
 
 
 

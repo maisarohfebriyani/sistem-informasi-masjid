@@ -2,11 +2,6 @@
   <div class="card card-success">
     <div class="card-header">
       <h3 class="card-title">Data <?= esc($judul) ?></h3>
-      <div class="card-tools">
-        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-tambah">
-          <i class="fas fa-plus"></i> Tambah
-        </button>
-      </div>
     </div>
 
     <div class="card-body">
@@ -36,7 +31,6 @@
               <td class="text-left">
                 <strong><?= esc($value['nama_bank_tujuan'] ?? '-') ?></strong><br>
                 <?= esc($value['no_rekening_tujuan'] ?? '-') ?><br>
-                
               </td>
 
               <!-- Rekening Pengirim -->
@@ -44,7 +38,6 @@
                 <strong><?= esc($value['nama_bank_pengirim'] ?? '-') ?></strong><br>
                 <?= esc($value['no_rekening_pengirim'] ?? '-') ?><br>
                 a.n : <?= esc($value['nama_pengirim'] ?? '-') ?>
-               
               </td>
 
               <!-- Jumlah -->
@@ -63,10 +56,12 @@
                 <?php endif; ?>
               </td>
 
-              <!-- Bukti Transfer -->
+              <!-- Bukti Transfer (klik untuk perbesar) -->
               <td>
                 <?php if (!empty($value['bukti'])) : ?>
-                  <img src="<?= base_url('bukti/' . $value['bukti']) ?>" width="100px" class="img-thumbnail">
+                  <a href="<?= base_url('bukti/' . $value['bukti']) ?>" target="_blank">
+                    <img src="<?= base_url('bukti/' . $value['bukti']) ?>" width="100px" class="img-thumbnail" alt="Bukti Transfer">
+                  </a>
                 <?php else : ?>
                   <span class="text-danger">Belum ada</span>
                 <?php endif; ?>
