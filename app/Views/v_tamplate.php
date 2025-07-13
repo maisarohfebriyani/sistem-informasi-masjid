@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="<?= base_url('AdminLTE3/dist/css/adminlte.min.css') ?>">
 </head>
 <body class="hold-transition layout-top-nav">
-  
+
 <?php
 $db = \Config\Database::connect();
 $web = $db->table('tbl_setting')->get()->getRowArray();
@@ -55,6 +55,12 @@ if (!$web) {
               <a href="<?= base_url('Home/Donasi') ?>" class="btn btn-warning">
                 <i class="fas fa-hand-holding-usd"></i> Donasi
               </a>
+            </li>
+            <li class="nav-item ml-2">
+              <a href="<?= base_url('login') ?>" class="btn btn-primary">
+                <i class="fas fa-sign-in-alt"></i> Login
+              </a>
+
             </li>
           </ul>
         </div>
